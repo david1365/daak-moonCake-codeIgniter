@@ -4,7 +4,7 @@
 	//var scriptsRead = {};
 	var formElements = 'input, select, textarea, .da-date, button, *';
 	
-	var horizontalMenuContainer = $("#horizontal-menu-container");
+	// var horizontalMenuContainer = $("#horizontal-menu-container");
 
 	$.ajaxSetup({
 		cache: false,
@@ -769,161 +769,208 @@
 		}
 	}
 
-	$.fn.createHorizontalMenu = function(params){
-		var endCreated = false;
-        var verticalMenu = params.verticalMenu;
-        var maxWidth =  params.maxWidth;
-        var horizontalMenuContainer = $(this);
 
-		verticalMenu.find('ul:first').find('li').each(function(index){
-			if ((!$(this).parent().parent().hasClass('vertical-sub-menu')) && (endCreated == false)){
-			
-					var li = $('<li ><a href="#">' + $(this).find('a:first').text() + '</a></li>');
-					var selfLi = $(this);
-
-					li.unbind("mouseover.li");
-					li.bind("mouseover.li", function(){
-						$(this).cssAnimate("wobble");
-					});
-
-					li.unbind("click.li");
-					if ($(this).urlAjaxModal()){
-						li.attr("data-url", $(this).attr("data-url"));
-
-						li.bind("click.li", function(){
-							selfLi.click();
-						});
-					}
-					else{
-						li.bind("click.li", function(){
-							$.openVerticalMenu();
-							selfLi.click();
-						});
-					}
-
-					$("#menu-icon").before(li);
-					
-					if(horizontalMenuContainer.width() >= maxWidth){
-						li.remove();
-						endCreated = true;
-						//return false;
-					}
-			}
-			else{
-				$(this).urlAjaxModal();
-			}
-			
-		});
-	};
+	// $.fn.createHorizontalMenu = function(params){
+	// 	var endCreated = false;
+     //    var verticalMenu = params.verticalMenu;
+     //    var maxWidth =  params.maxWidth;
+     //    var horizontalMenuContainer = $(this);
+    //
+	// 	verticalMenu.find('ul:first').find('li').each(function(index){
+	// 		if ((!$(this).parent().parent().hasClass('vertical-sub-menu')) && (endCreated == false)){
+	//
+	// 				var li = $('<li ><a href="#">' + $(this).find('a:first').text() + '</a></li>');
+	// 				var selfLi = $(this);
+    //
+	// 				li.unbind("mouseover.li");
+	// 				li.bind("mouseover.li", function(){
+	// 					$(this).cssAnimate("wobble");
+	// 				});
+    //
+	// 				li.unbind("click.li");
+	// 				if ($(this).urlAjaxModal()){
+	// 					li.attr("data-url", $(this).attr("data-url"));
+    //
+	// 					li.bind("click.li", function(){
+	// 						selfLi.click();
+	// 					});
+	// 				}
+	// 				else{
+	// 					li.bind("click.li", function(){
+	// 						$.openVerticalMenu();
+	// 						selfLi.click();
+	// 					});
+	// 				}
+    //
+	// 				$("#menu-icon").before(li);
+	//
+	// 				if(horizontalMenuContainer.width() >= maxWidth){
+	// 					li.remove();
+	// 					endCreated = true;
+	// 					//return false;
+	// 				}
+	// 		}
+	// 		else{
+	// 			$(this).urlAjaxModal();
+	// 		}
+	//
+	// 	});
+	// };
 	
 	
-	$(document).ready(function() {
+
+	$.menuConfig = function () {
+		var currentSubMenu;
 		
-		$('#logoutMenu').click(function(){
-			  //$('.logout').fadeToggle('slow');
-			  $('.logout').show('slow');
-			 // $('.logout').cssAnimate("bounceInLeft");	
+		$.fn.setDescriptions = function () {
+			$("#mainTitle").parent().html($(this).daak("title"));
+			$("#subTitle").html($(this).daak("title"));
+			$("#head-title").html($(this).daak("title"));
+			$("#head-description").html($(this).daak("description"));
+		}
 
-			if ($(this).attr("src") == "../../share/images/icon.png"){
-				  $(this).cssAnimate("flip", function(target){
-					  target.cssAnimate("rubberBand", function(target){
-						  target.attr("src", "../../share/images/white.icon.png");
-						  $("#logout li").show();
-					  });				  
-				  });
+		$(".da-menu-item").each(function () {
+			if ($(this).daak("active") == "1"){
+				$(this).addClass("active");
+				currentSubMenu = $(this);
+				$(this).setDescriptions();
 			}
-		});
 
-		$(document).mouseup(function (e)
-		{
-			var screenwidth = $( window ).width();
-			
-			var container = $("#logoutMenu");
+			$(this).click( function() {
+				if(!currentSubMenu.is($(this))){
+					if ($(this).attr("da-url")){
+						// if( $.fn.DAreadRequestUrl ) {
+						// 	$("#main-content").DAreadRequestUrl($(this).daak("url"));
+						// }
 
-			//if (screenwidth > 584){
-				if (!container.is(e.target) // if the target of the click isn't the container...
-					&& container.has(e.target).length === 0) // ... nor a descendant of the container
-				{
-					if (container.attr("src") == "../../share/images/white.icon.png"){
-						$("#logout li").hide();
-						
-						container.cssAnimate("flip", function(target){
-							  target.cssAnimate("rubberBand", function(target){
-									target.attr("src", "../../share/images/icon.png");
-							  });				  
-						  });
+						$(this).addClass("active");
+						currentSubMenu.removeClass("active");
+						currentSubMenu = $(this);
+
+						$(this).setDescriptions();
 					}
-					
-					
-					
-					//container.cssAnimate("hinge", function(){
-						//container.hide('slow');
-					//});
-					
-					//$.restorDefaultMenu();
 				}
-			//}
-			
-			
+			});
 		});
+	}
 
-		$("#change-password").bind("click", function(e){
-			var ajaxParams = {};
-			//ajaxParams.title = "تغییر پسورد";
-			ajaxParams.url = "../actChangePassword.do";
-			ajaxParams.modalSize = "modal-sm";
-			ajaxParams.showModal = true;
-			ajaxParams.formData = true;
-			ajaxParams.data= new FormData();
-			ajaxParams.data.append('mode', 'view');
+	$(document).ready(function() {
 
-            $.createModal().defaultAjaxModal(ajaxParams);
-		});
 
-		$("#user-icon").click(function(e){
-			$('#bilbord-content').modal('show');  
-		});
+
+		// $('span').click(function(){
+		// 	var title = $(this).attr("title");
+		// 	if (title){
+		// 		DAcurrentMainMenu = $(this).parent();
+		// 	}
+		// });
+
 		
-		$("#menu-icon").click(function(e){
-			e.stopPropagation();
-			$.openVerticalMenu();  
-		});
-		
-		$("#container").click(function(e){
-			$.closeVerticalMenu();
-		});
-		
-		$("#logo-img").mouseover(function(){
-			$(this).cssAnimate("bounceIn");
-		});
+		// $('#logoutMenu').click(function(){
+		// 	  //$('.logout').fadeToggle('slow');
+		// 	  $('.logout').show('slow');
+		// 	 // $('.logout').cssAnimate("bounceInLeft");
+        //
+		// 	if ($(this).attr("src") == "../../share/images/icon.png"){
+		// 		  $(this).cssAnimate("flip", function(target){
+		// 			  target.cssAnimate("rubberBand", function(target){
+		// 				  target.attr("src", "../../share/images/white.icon.png");
+		// 				  $("#logout li").show();
+		// 			  });
+		// 		  });
+		// 	}
+		// });
 
-        $(horizontalMenuContainer).createHorizontalMenu({
-            verticalMenu: $.verticalMenu,
-            maxWidth: $(Document).width() - 293 - 50 - 35 - 100,
-        });
+		// $(document).mouseup(function (e)
+		// {
+		// 	var screenwidth = $( window ).width();
+		//
+		// 	var container = $("#logoutMenu");
+        //
+		// 	//if (screenwidth > 584){
+		// 		if (!container.is(e.target) // if the target of the click isn't the container...
+		// 			&& container.has(e.target).length === 0) // ... nor a descendant of the container
+		// 		{
+		// 			if (container.attr("src") == "../../share/images/white.icon.png"){
+		// 				$("#logout li").hide();
+		//
+		// 				container.cssAnimate("flip", function(target){
+		// 					  target.cssAnimate("rubberBand", function(target){
+		// 							target.attr("src", "../../share/images/icon.png");
+		// 					  });
+		// 				  });
+		// 			}
+		//
+		//
+		//
+		// 			//container.cssAnimate("hinge", function(){
+		// 				//container.hide('slow');
+		// 			//});
+		//
+		// 			//$.restorDefaultMenu();
+		// 		}
+		// 	//}
+		//
+		//
+		// });
+
+		// $("#change-password").bind("click", function(e){
+		// 	var ajaxParams = {};
+		// 	//ajaxParams.title = "تغییر پسورد";
+		// 	ajaxParams.url = "../actChangePassword.do";
+		// 	ajaxParams.modalSize = "modal-sm";
+		// 	ajaxParams.showModal = true;
+		// 	ajaxParams.formData = true;
+		// 	ajaxParams.data= new FormData();
+		// 	ajaxParams.data.append('mode', 'view');
+        //
+         //    $.createModal().defaultAjaxModal(ajaxParams);
+		// });
+
+		// $("#user-icon").click(function(e){
+		// 	$('#bilbord-content').modal('show');
+		// });
+		
+		// $("#menu-icon").click(function(e){
+		// 	e.stopPropagation();
+		// 	$.openVerticalMenu();
+		// });
+		
+		// $("#container").click(function(e){
+		// 	$.closeVerticalMenu();
+		// });
+		
+		// $("#logo-img").mouseover(function(){
+		// 	$(this).cssAnimate("bounceIn");
+		// });
+
+        // $(horizontalMenuContainer).createHorizontalMenu({
+        //     verticalMenu: $.verticalMenu,
+        //     maxWidth: $(Document).width() - 293 - 50 - 35 - 100,
+        // });
 		
 		
-		$(window).resize(function(){
-            $(horizontalMenuContainer).removeExtraMenu();
-            $(horizontalMenuContainer).createHorizontalMenu({
-                verticalMenu: $.verticalMenu,
-                maxWidth: $(Document).width() - 293 - 50 - 35 - 100,
-            });
+		// $(window).resize(function(){
+         //    $(horizontalMenuContainer).removeExtraMenu();
+         //    $(horizontalMenuContainer).createHorizontalMenu({
+         //        verticalMenu: $.verticalMenu,
+         //        maxWidth: $(Document).width() - 293 - 50 - 35 - 100,
+         //    });
+        //
+		// 	//---resize edit body----------------------------------------
+		// 	var firstEditBody =  $('.da-edit-menu:first');
+		// 	var editBodys = $('.da-edit-menu');
+		// 	if (editBodys.length > 0){
+		// 		var maxWidth = firstEditBody.parents('table:first').width();
+		// 		editBodys.width(maxWidth);
+		// 	}
+		// });
 
-			//---resize edit body----------------------------------------
-			var firstEditBody =  $('.da-edit-menu:first');
-			var editBodys = $('.da-edit-menu');
-			if (editBodys.length > 0){
-				var maxWidth = firstEditBody.parents('table:first').width();
-				editBodys.width(maxWidth);
-			}
-		});
-
-		$('[da-type="da-message_container"]').showMessage({
-			max: 'totalSize',
-			first: 'currentFirst',
-			last: 'currentLast'
-		});
+		// $('[da-type="da-message_container"]').showMessage({
+		// 	max: 'totalSize',
+		// 	first: 'currentFirst',
+		// 	last: 'currentLast'
+		// });
 
 		$('[data-toggle="tooltip"]').tooltip();
 

@@ -133,7 +133,7 @@ tel: 09125188694
                     DAcurrentSubMenu.addClass("active");
                     DAcurrentMainMenu.addClass("active");    
             
-                    $(".DAsm").click( function() {
+                    $(".da-menu-item").click( function() {
                         if(!DAcurrentSubMenu.is($(this))){
                             
                             if ($(this).attr("id") == "Dashboard"){
@@ -146,9 +146,9 @@ tel: 09125188694
                             }
                             else{
                         
-                                if ($(this).attr("data-url")){  
+                                if ($(this).daak("da-url")){
                                      if( $.fn.DAreadRequestUrl ) { 
-                                         $("#main-content").DAreadRequestUrl($(this).data("url"));
+                                         $("#main-content").DAreadRequestUrl($(this).daak("url"));
                                      }
 
                                      $(this).addClass("active");

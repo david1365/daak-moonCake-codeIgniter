@@ -38,6 +38,9 @@
 
 <!-- End Plugin Stylesheets -->
 
+<!-- pnotify -->
+<link rel="stylesheet" href="plugins/pnotify/pnotify.custom.min.css" media="screen">
+
 <!-- Main Layout Stylesheet -->
 <link rel="stylesheet" href="assets/css/fonts/icomoon/style.css" media="screen">
 <link rel="stylesheet" href="assets/css/main-style.css" media="screen">
@@ -222,7 +225,7 @@
 											$tmp = $tmp + 1;
 
 										} else {
-											echo "<li id=\"".$news_item["_name"]."\" data-url=\"".$news_item["_url"]."\" class=\"DAsm\"><a><i class=\"".$news_item["_icon"]."\"></i>".$news_item["_name"]."</a></li>","\n";
+											echo "<li daak-title=\"".$news_item["_name"]."\" daak-active=\"".$news_item["_isActive"]."\" daak-description=\"".$news_item["_description"]."\" daak-url=\"".$news_item["_url"]."\" class=\"daak-menu-item\"><a><i class=\"".$news_item["_icon"]."\"></i>".$news_item["_name"]."</a></li>","\n";
 										}
 									endforeach;
 									if($tmp>=1){
@@ -250,8 +253,8 @@
                                 </ul>
 
                                 <h1 id="main-heading">
-                                    میز کار
-                                    <span>اینجا مکانی است که هرچیزی استارت می خورد!</span>
+        							<asid id="head-title">میز کار</asid>
+                                    <span id="head-description">اینجا مکانی است که هرچیزی استارت می خورد!</span>
                                 </h1>
                             </div>
 
@@ -711,6 +714,9 @@
     <!-- iButton -->
     <script src="plugins/ibutton/jquery.ibutton.min.js"></script>
 
+	<!-- pnotify -->
+	<script src="plugins/pnotify/pnotify.custom.min.js"></script>
+
     <!-- Full Calendar -->
     <script src="plugins/fullcalendar/fullcalendar.min.js"></script>
 
@@ -722,8 +728,8 @@
     <!-- Demo Scripts -->
     <script src="assets/js/demo/dashboard.js"></script>
 
-	<script src="assets/js/da/da-menu.js"></script>
-
+	<script src="assets/js/daak/daak-main.js"></script>
+	<script src="assets/js/daak/daak-base.js"></script>
 </body>
 
 </html>
