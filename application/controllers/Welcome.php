@@ -29,7 +29,7 @@ class Welcome extends CI_Controller {
         {
 	$data['_menu'] = $this->_menu_model->get_menu();
 	//$data['query']=$query->result_array();
-	$this->load->view('da-portal', $data);
+	$this->load->view('daak-portal', $data);
 	
         }
 	

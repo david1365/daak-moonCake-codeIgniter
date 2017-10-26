@@ -754,12 +754,12 @@
 	};
 //------------------------------------------------------
 	$.fn.urlAjaxModal = function(){
-		if (($(this).attr("data-url")) && ($(this).data("url") != "")) {
+		if (($(this).attr("daak-url")) && ($(this).daak("url") != "")) {
 			var ajaxParams = {};
-			ajaxParams.title = $(this).text();
-			ajaxParams.url = $(this).data('url');
-			ajaxParams.modalSize = "modal-lg";
-			ajaxParams.showModal = true;
+			// ajaxParams.title = $(this).text();
+			ajaxParams.url = $(this).daak('url');
+			// ajaxParams.modalSize = "modal-lg";
+			ajaxParams.showModal = false;
 
 			$(this).ajaxModal(ajaxParams);
 			return true;
@@ -823,13 +823,13 @@
 		var currentSubMenu;
 		
 		$.fn.setDescriptions = function () {
-			$("#mainTitle").parent().html($(this).daak("title"));
+			$("#mainTitle").html($(this).daak("title"));
 			$("#subTitle").html($(this).daak("title"));
 			$("#head-title").html($(this).daak("title"));
 			$("#head-description").html($(this).daak("description"));
 		}
 
-		$(".da-menu-item").each(function () {
+		$(".daak-menu-item").each(function () {
 			if ($(this).daak("active") == "1"){
 				$(this).addClass("active");
 				currentSubMenu = $(this);
@@ -838,10 +838,10 @@
 
 			$(this).click( function() {
 				if(!currentSubMenu.is($(this))){
-					if ($(this).attr("da-url")){
-						// if( $.fn.DAreadRequestUrl ) {
-						// 	$("#main-content").DAreadRequestUrl($(this).daak("url"));
-						// }
+					if ($(this).attr("daak-url")){
+						if( $.fn.urlAjaxModal ) {
+							$("#main-content").urlAjaxModal();
+						}
 
 						$(this).addClass("active");
 						currentSubMenu.removeClass("active");
@@ -855,7 +855,7 @@
 	}
 
 	$(document).ready(function() {
-
+		$.menuConfig();
 
 
 		// $('span').click(function(){
