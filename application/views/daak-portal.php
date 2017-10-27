@@ -39,7 +39,10 @@
 <!-- End Plugin Stylesheets -->
 
 <!-- pnotify -->
-<link rel="stylesheet" href="plugins/pnotify/pnotify.custom.min.css" media="screen">
+<link rel="stylesheet" href="plugins/pnotify/jquery.pnotify.css" media="screen">
+
+<!-- daak -->
+<link rel="stylesheet" href="assets/css/daak/daak-bootstrap-pnotify.custom.css" media="screen">
 
 <!-- Main Layout Stylesheet -->
 <link rel="stylesheet" href="assets/css/fonts/icomoon/style.css" media="screen">
@@ -674,6 +677,7 @@
 
     <!-- Core Scripts -->
     <script src="assets/js/libs/jquery-1.8.3.min.js"></script>
+<!--	<script src="assets/js/libs/jquery-3.2.1.min.js"></script>-->
     <script src="bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/libs/jquery.placeholder.min.js"></script>
     <script src="assets/js/libs/jquery.mousewheel.min.js"></script>
@@ -715,7 +719,7 @@
     <script src="plugins/ibutton/jquery.ibutton.min.js"></script>
 
 	<!-- pnotify -->
-	<script src="plugins/pnotify/pnotify.custom.min.js"></script>
+	<script src="plugins/pnotify/jquery.pnotify.min.js"></script>
 
     <!-- Full Calendar -->
     <script src="plugins/fullcalendar/fullcalendar.min.js"></script>
@@ -730,6 +734,7 @@
 
 	<script src="assets/js/daak/daak-main.js"></script>
 	<script src="assets/js/daak/daak-base.js"></script>
+	<script src="assets/js/daak/daak-data.js"></script>
 </body>
 
 </html>

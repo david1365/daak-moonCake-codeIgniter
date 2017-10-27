@@ -816,39 +816,35 @@
 	//
 	// 	});
 	// };
-	
-	
+
+	$.fn.setDescriptions = function () {
+		$("#mainTitle").html($(this).daak("title"));
+		$("#subTitle").html($(this).daak("title"));
+		$("#head-title").html($(this).daak("title"));
+		$("#head-description").html($(this).daak("description"));
+	}
+
 
 	$.menuConfig = function () {
-		var currentSubMenu;
-		
-		$.fn.setDescriptions = function () {
-			$("#mainTitle").html($(this).daak("title"));
-			$("#subTitle").html($(this).daak("title"));
-			$("#head-title").html($(this).daak("title"));
-			$("#head-description").html($(this).daak("description"));
+		$.fn.active = function () {
+			$(".daak-menu-item").filter(".active").removeClass("active");
+			$(this).addClass("active");
 		}
 
 		$(".daak-menu-item").each(function () {
 			if ($(this).daak("active") == "1"){
 				$(this).addClass("active");
-				currentSubMenu = $(this);
 				$(this).setDescriptions();
 			}
 
 			$(this).click( function() {
-				if(!currentSubMenu.is($(this))){
-					if ($(this).attr("daak-url")){
-						if( $.fn.urlAjaxModal ) {
-							$("#main-content").urlAjaxModal();
-						}
+				if(!$(this).is(".active")){
+					// if ($(this).attr("daak-url")){
 
-						$(this).addClass("active");
-						currentSubMenu.removeClass("active");
-						currentSubMenu = $(this);
-
-						$(this).setDescriptions();
-					}
+					$(this).active();
+					$(this).setDescriptions();
+					$(this).urlAjaxModal();
+					// }
 				}
 			});
 		});

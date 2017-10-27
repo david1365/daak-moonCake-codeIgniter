@@ -606,22 +606,22 @@
 			return insertButton;
 		};
 
-		//--PNotify--
-		PNotify.prototype.options.styling = "bootstrap3";
+		// //--PNotify--
+		// PNotify.prototype.options.styling = "bootstrap3";
 
-		$.pnotify = function (pnotifyParam){
-			return new PNotify(pnotifyParam);
-		}
+		// $.pnotify = function (pnotifyParam){
+		// 	return new PNotify(pnotifyParam);
+		// }
 
 		$.notify = function (notifyParam){
 			//var stack_bottomleft = {"dir1": "right", "dir2": "up", "push": "top"};
 
 			var np = {
-				animate: {
-					animate: true,
-					in_class: 'bounceIn',
-					out_class: 'bounceOutLeft'
-				},
+				// animate: {
+				// 	animate: true,
+				// 	in_class: 'bounceIn',
+				// 	out_class: 'bounceOutLeft'
+				// },
 				//addclass: "stack-bottomleft",
 				//stack: stack_bottomleft,
                 delay: 2500,
