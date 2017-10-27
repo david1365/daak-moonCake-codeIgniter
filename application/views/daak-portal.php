@@ -205,19 +205,16 @@
                         	<nav id="navigation" class="collapse">
                             	<ul>
 									<?php
-									header("Content-Type: text/html;charset=UTF-8");
 									$tmp = 0;
 
 									foreach ($_menu as $news_item): // preparing an array
-
-
 										if($news_item["_tp"] == 0 ){
 											if($tmp>=1){
 												echo "</ul></li>","\n";
-												echo "<li id=\"".$news_item["_name"]."\">", "\n";
+												echo "<li daak-title=\"".$news_item["_name"]."\">", "\n";
 											} else{
 												//echo "<li id=\"General\">", "\n";
-												echo "<li id=\"".$news_item["_name"]."\" class=\"active\">", "\n";
+												echo "<li daak-title=\"".$news_item["_name"]."\" class=\"active\">", "\n";
 
 											}
 
@@ -247,11 +244,11 @@
                             	<ul class="breadcrumb">
                                 	<li>
                                     	<a class="icon-home"></a>
-										<span id="mainTitle" >سامانه ی نوبت دهی‌</span>
+										<span id="main-title" >سامانه ی نوبت دهی‌</span>
                                         <span class="divider">&raquo;</span>
                                     </li>
                                     <li>
-                                    	<a id="subTitle" href="#">میز کار</a>
+                                    	<a id="sub-title" href="#">میز کار</a>
                                     </li>
                                 </ul>
 

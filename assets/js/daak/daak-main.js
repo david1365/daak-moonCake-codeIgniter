@@ -6,6 +6,15 @@
 	$.elementCount = 0;
 	$.elements = {};
 
+	$.fn.checkUrl = function (func) {
+		if (($(this).attr("daak-url")) && ($(this).daak("url") != "")) {
+			func();
+			return true;
+		}
+
+		return false;
+	}
+
 	$.fn.daak = function (attrData) {
 		return $(this).attr("daak-" + attrData);
 	}
@@ -599,19 +608,21 @@
 					var modal =	$.createModal();//parentModal);
 					var parentModal = $(this).parents('.modal:first');
 					modal.attr('da-parent_modal', parentModal.attr('id'));
-					modal.defaultAjaxModal(ajaxParams);
+					modal.doAjaxModal(ajaxParams);
 				}
 			});
 
 			return insertButton;
 		};
 
-		// //--PNotify--
-		// PNotify.prototype.options.styling = "bootstrap3";
 
+		//--PNotify-----------
+		// PNotify.prototype.options.styling = "bootstrap3";
+        //
 		// $.pnotify = function (pnotifyParam){
 		// 	return new PNotify(pnotifyParam);
 		// }
+
 
 		$.notify = function (notifyParam){
 			//var stack_bottomleft = {"dir1": "right", "dir2": "up", "push": "top"};
