@@ -81,6 +81,9 @@
 <!--TODO: data-url to da-url and use bundle-->
 <div id="vertical-menu" class="menu daak-vertical-menu-container no-select">
     <ul class="daak-vertical-menu">
+		<li>
+			<input type="text"/>
+		</li>
         <li class="daak-vertical-sub-menu">
 			<a href="#"><span class="glyphicon glyphicon-flag"></span>گروه</a>
             <ul>

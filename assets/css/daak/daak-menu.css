@@ -1,5 +1,5 @@
 /*--v-david 1395-07-23*/
-.daak-menu ul{
+.daak-menu ul, .daak-menu li{
 	list-style-type: none;
 	cursor: pointer;
 }
@@ -25,9 +25,11 @@
 	overflow: hidden;
 }
 .daak-vertical-menu ul{
+	list-style-type: none;
 	margin: 0;
 }
 .daak-vertical-menu li{
+	list-style-type: none;
 	padding: 12px 0px 12px;
 	border-bottom: 1px solid rgb(56, 57, 57);
 }
