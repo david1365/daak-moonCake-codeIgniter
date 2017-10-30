@@ -722,9 +722,24 @@
     <script src="plugins/fullcalendar/fullcalendar.min.js"></script>
 
     <!-- DataTables -->
-    <script src="plugins/datatables/jquery.dataTables.min.js"></script>
-    <script src="plugins/datatables/TableTools/js/TableTools.min.js"></script>
-    <script src="plugins/datatables/dataTables.bootstrap.js"></script>
+<!--	<script src="plugins/mb_table/js/jquery.dataTables.min.js"></script>-->
+<!--    <script src="plugins/datatables/TableTools/js/TableTools.min.js"></script>-->
+>
+
+	<script src="plugins/mb_table/js/jquery.dataTables.min.js"></script>
+	<script src="plugins/mb_table/js/dataTables.buttons.min.js"></script>
+<!--	<script src="plugins/mb_table/js/buttons.flash.min.js"></script>-->
+<!--	<script src="plugins/mb_table/js/jszip.min.js"></script>-->
+
+<!--	<script src="plugins/datatables/dataTables.bootstrap.js"></script-->
+	<!--
+     <script src="plugins/mb_table/js/pdfmake.min.js"></script>
+     <script src="plugins/mb_table/js/vfs_fonts.js"></script>
+
+     -->
+	<script src="plugins/mb_table/js/buttons.print.min.js"></script>
+	<script src="plugins/mb_table/js/dataTables.select.min.js"></script>
+	<script src="plugins/mb_table/js/buttons.html5.min.js"></script>
 
     <!-- Demo Scripts -->
     <script src="assets/js/demo/dashboard.js"></script>
