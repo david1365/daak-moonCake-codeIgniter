@@ -5,19 +5,6 @@
 	
 	$.elementCount = 0;
 	$.elements = {};
-
-	$.fn.checkUrl = function (func) {
-		if (($(this).attr("daak-url")) && ($(this).daak("url") != "")) {
-			func();
-			return true;
-		}
-
-		return false;
-	}
-
-	$.fn.daak = function (attrData) {
-		return $(this).attr("daak-" + attrData);
-	}
 	
 //-----------------------------------------------
 	$.fn.getElementUrl = function () {
@@ -543,7 +530,7 @@
         };
 
         $.createSearchButton = function(searchBody){
-            var searchButton = $('<div  class="close daak-searchearch" data-toggle="tooltip" data-placement="bottom" title="جستجو"> ' +
+            var searchButton = $('<div  class="close daak-search" data-toggle="tooltip" data-placement="bottom" title="جستجو"> ' +
                                     '<span class="glyphicon glyphicon-search" ></span> ' +
                                  '</div>'
                                );
@@ -608,34 +595,32 @@
 					var modal =	$.createModal();//parentModal);
 					var parentModal = $(this).parents('.modal:first');
 					modal.attr('da-parent_modal', parentModal.attr('id'));
-					modal.doAjaxModal(ajaxParams);
+					modal.defaultAjaxModal(ajaxParams);
 				}
 			});
 
 			return insertButton;
 		};
 
+		//--PNotify--
+		PNotify.prototype.options.styling = "bootstrap3";
 
-		//--PNotify-----------
-		// PNotify.prototype.options.styling = "bootstrap3";
-        //
-		// $.pnotify = function (pnotifyParam){
-		// 	return new PNotify(pnotifyParam);
-		// }
-
+		$.pnotify = function (pnotifyParam){
+			return new PNotify(pnotifyParam);
+		}
 
 		$.notify = function (notifyParam){
 			//var stack_bottomleft = {"dir1": "right", "dir2": "up", "push": "top"};
 
 			var np = {
-				// animate: {
-				// 	animate: true,
-				// 	in_class: 'bounceIn',
-				// 	out_class: 'bounceOutLeft'
-				// },
+				animate: {
+					animate: true,
+					in_class: 'bounceIn',
+					out_class: 'bounceOutLeft'
+				},
 				//addclass: "stack-bottomleft",
 				//stack: stack_bottomleft,
-                delay: 2500,
+
 				cornerclass: "",
 				width: "500px",
 			};
@@ -658,7 +643,7 @@
 //------------------------------------------------
 		$.notifyAlert = function (notifyParam){
 			var params = {
-				icon: 'glyphicon glyphicon-question-sign',
+				// icon: 'glyphicon glyphicon-question-sign',
 				hide: false,
 				confirm: {
 					confirm: true
@@ -680,7 +665,7 @@
 		$.fn.notifyGetMessage = function(otherParams){
 			if( $.notify ) {
 				var ms = '';
-				ms = $(this).find('.da-alert-message:first').text();
+				ms = $(this).find('.da-message:first').text();
 				ms = ms.trim();
 
 				if (ms != '') {

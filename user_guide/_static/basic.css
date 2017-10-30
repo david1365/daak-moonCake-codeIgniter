@@ -94,23 +94,23 @@ img {
 
 /* -- search page ----------------------------------------------------------- */
 
-ul.search {
+ul.daak-search {
     margin: 10px 0 0 20px;
     padding: 0;
 }
 
-ul.search li {
+ul.daak-search li {
     padding: 5px 0 5px 20px;
     background-image: url(file.png);
     background-repeat: no-repeat;
     background-position: 0 7px;
 }
 
-ul.search li a {
+ul.daak-search li a {
     font-weight: bold;
 }
 
-ul.search li div.context {
+ul.daak-search li div.context {
     color: #888;
     margin: 2px 0 0 30px;
     text-align: left;
