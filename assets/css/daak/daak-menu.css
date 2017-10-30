@@ -40,6 +40,10 @@
 	/*! color: rgb(14, 13, 13); */
 }
 
+.daak-vertical-menu a, .daak-vertical-menu a:hover, .daak-vertical-menu a:active, daak-vertical-menu a:focus{
+	text-decoration: none !important;
+}
+
 .daak-vertical-menu .active {
 	background-color: rgb(255, 255, 255) !important;
 }
