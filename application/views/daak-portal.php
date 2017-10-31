@@ -14,11 +14,16 @@
     <!-- bootstrap -->
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"/>
 
+
     <!-- pnotify -->
     <link rel="stylesheet" href="assets/css/daak/pnotify.custom.min.css" media="screen"/>
 
     <!-- animate.css -->
     <link rel="stylesheet" href="assets/css/daak/animate.css" media="screen"/>
+
+<!--	<link rel="stylesheet" href="plugins/mb_table/css/jquery.dataTables.min.css" media="screen">-->
+	<link rel="stylesheet" href="plugins/mb_table/css/buttons.dataTables.min.css" media="screen">
+	<link rel="stylesheet" href="bootstrap/dataTables.bootstrap.min.css"/>
 
     <!-- bootstrap-slider.css
     <link rel="stylesheet" href="assets/css/daak/bootstrap-slider.css" media="screen"/>-->
@@ -87,12 +92,12 @@
         <li class="daak-vertical-sub-menu">
 			<a href="#"><span class="glyphicon glyphicon-flag"></span>گروه</a>
             <ul>
-                <li data-url="../group/searchgroup/searchgroup_view.php" >
+                <li data-url="_stu/_stu_controller" >
 
 					<a href="#"><span  class="glyphicon glyphicon-menu-hamburger"></span>گروه</a>
 
 				</li>
-				<li data-url="../group/searchgroup/searchgroup_view.php" >
+				<li data-url="_list/_list_controller" >
 					<a href="#" da-bundle="group"><span  class="glyphicon glyphicon-user"></span>مزایای گروه</a>
 				</li>
 				<li data-url="../group/searchgroup/searchgroup_view.php" >
@@ -203,6 +208,15 @@
 
 <!-- jquery.fileDownload Script  -->
 <script src="assets/js/scripts/jQuery/jquery.fileDownload.js"></script>
+
+
+<script src="plugins/mb_table/js/jquery.dataTables.min.js"></script>
+<script src="bootstrap/dataTables.bootstrap.min.js"></script>
+
+<script src="plugins/mb_table/js/dataTables.buttons.min.js"></script>
+<script src="plugins/mb_table/js/buttons.print.min.js"></script>
+<script src="plugins/mb_table/js/dataTables.select.min.js"></script>
+<script src="plugins/mb_table/js/buttons.html5.min.js"></script>
 
 <!-- bootstrap-slider.js
 <link rel="stylesheet" href="assets/js/scripts/jQuery/bootstrap-slider.js" media="screen"/>-->

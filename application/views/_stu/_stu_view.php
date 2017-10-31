@@ -1,4 +1,3 @@
-<!-- --v-david 1396-07-03 -->
 
 <header>
 	ثبت گروه
@@ -23,3 +22,6 @@
 	</div>
 
 </form>
+
+
+<script src="assets/js/test/add_group.js"></script>

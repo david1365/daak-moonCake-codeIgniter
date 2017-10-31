@@ -724,7 +724,7 @@
     <!-- DataTables -->
 <!--	<script src="plugins/mb_table/js/jquery.dataTables.min.js"></script>-->
 <!--    <script src="plugins/datatables/TableTools/js/TableTools.min.js"></script>-->
->
+
 
 	<script src="plugins/mb_table/js/jquery.dataTables.min.js"></script>
 	<script src="plugins/mb_table/js/dataTables.buttons.min.js"></script>
