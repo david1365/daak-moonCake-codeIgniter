@@ -16,13 +16,15 @@
 	position: absolute;
 	width: 250px;
 	height: 100%;
-	background: rgba(0, 0, 0, 0.98);
+	/*! background: rgba(0, 0, 0, 0.98); */
 	/*! border: 1px solid rgb(0, 0, 0); */
 	top: 0px;
 	z-index: 5;
 	display: none;
 
 	overflow: hidden;
+	margin-top: 66px;
+	background-image: url("../images/linen.png");
 }
 .daak-vertical-menu ul{
 	list-style-type: none;
@@ -32,6 +34,8 @@
 	list-style-type: none;
 	padding: 12px 0px 12px;
 	border-bottom: 1px solid rgb(56, 57, 57);
+	border-top: 1px solid #4f4f4f;
+	border-bottom: 1px solid #222;
 }
 
 .daak-vertical-menu li:hover{
@@ -64,13 +68,13 @@
 
 .daak-vertical-sub-menu li:hover{
 	text-decoration: none;
-	background-color: rgb(255, 255, 255);
 	color: rgb(50,50,50);
 	transition-duration: 0.5s;
+	background-color: rgba(148, 219, 255, 0.2);
 }
 
 .daak-vertical-sub-menu ul a{
-	color: black;
+	color: #a0a2a4;
 	/*! text-shadow: 1px 1px 10px #FFF; */
 	font-size: 14px;
 }
@@ -87,11 +91,13 @@
 
 .daak-vertical-menu .open  ul{
 	display: block;
-	background-color: rgba(249, 249, 249, 0.77);
+	background-color: rgba(68, 68, 68, 0.75);
+	border-top: 1px solid #222;
 }
 .daak-vertical-menu .open{
 	padding: 12px 0px 0px !important;
-	border-left: 1px solid black;
+	/*! border-left: 1px solid black; */
+	border-left: 1px solid #222;
 }
 
 .daak-horizontal-menu{

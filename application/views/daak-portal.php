@@ -55,17 +55,22 @@
 			<img  class="logo" src="daak/images/logo.png">
 			<section class="brand">سامانه ی نوبت دهی</section>
 
-			<div id="horizontal-menu-container" class="no-select">
-				<ul class="daak-menu daak-horizontal-menu">
-					<li id="user-icon" >
-						<a  href="#"><span  class="glyphicon glyphicon-user"></span></a>
-					</li>
+			<section class="">
+				<div id="horizontal-menu-container" class="no-select">
+					<ul class="daak-menu daak-horizontal-menu">
+						<li id="user-icon" >
+							<a  href="#"><span  class="glyphicon glyphicon-user"></span></a>
+						</li>
 
-					<li id="menu-icon"><a href="#"><span  class="glyphicon glyphicon-menu-hamburger"></span></a>
-					</li>
+						<li id="menu-icon"><a href="#"><span  class="glyphicon glyphicon-menu-hamburger"></span></a>
+						</li>
 
-				</ul>
-			</div>
+					</ul>
+				</div>
+
+				<img  class="user" src="daak/images/user.png">
+				<a href="#"><span  class="glyphicon glyphicon-">
+			</section>
 		</nav>
 
 <!--        <div class="agahi-img-container">-->
@@ -83,67 +88,68 @@
 
     </header>
 
+	<section class="container">
+		<!--    <div da-type="da-message_container" da-url="assets/css/actMessage.do"></div>-->
+	</section>
+
+	<!--TODO: data-url to da-url and use bundle-->
+	<div id="vertical-menu" class="menu daak-vertical-menu-container no-select">
+		<ul class="daak-vertical-menu">
+			<li>
+				<input type="text"/>
+			</li>
+			<li class="daak-vertical-sub-menu">
+				<a href="#"><span class="glyphicon glyphicon-flag"></span>گروه</a>
+				<ul>
+					<li data-url="_stu/_stu_controller" >
+
+						<a href="#"><span  class="glyphicon glyphicon-menu-hamburger"></span>گروه</a>
+
+					</li>
+					<li data-url="_list/_list_controller" >
+						<a href="#" da-bundle="group"><span  class="glyphicon glyphicon-user"></span>مزایای گروه</a>
+					</li>
+					<li data-url="_group/_group_ctl" >
+						<a href="#" da-bundle="group"><span  class="glyphicon glyphicon-th-large"></span>جستجوی گروه</a>
+					</li>
+
+				</ul>
+			</li>
+
+			<li class="daak-vertical-sub-menu">
+				<a  href="#" da-bundle="group"><span class="glyphicon glyphicon-time" ></span>نوبت دهی</a>
+				<ul>
+					<li data-url="../group/searchgroup/searchgroup_view.php" >
+						<a href="#" da-bundle="group"><span  class="glyphicon glyphicon-print"></span>نوبت دهی عمومی</a>
+					</li>
+					<li data-url="../group/searchgroup/searchgroup_view.php" >
+						<a href="#" da-bundle="group"><span  class="glyphicon glyphicon-road"></span>نوبت دهی ارزی</a>
+					</li>
+					<li data-url="../group/searchgroup/searchgroup_view.php" >
+						<a href="#" da-bundle="group"><span  class="glyphicon glyphicon-volume-up"></span>نوبت دهی ریالی</a>
+					</li>
+				</ul>
+			</li>
+
+			<li class="daak-vertical-sub-menu">
+				<a  href="#" da-bundle="group"><span class="glyphicon glyphicon-time" ></span>نوبت دهی</a>
+				<ul>
+					<li data-url="../group/searchgroup/searchgroup_view.php" >
+						<a href="#" da-bundle="group"><span  class="glyphicon glyphicon-print"></span>نوبت دهی عمومی</a>
+					</li>
+					<li data-url="../group/searchgroup/searchgroup_view.php" >
+						<a href="#" da-bundle="group"><span  class="glyphicon glyphicon-road"></span>نوبت دهی ارزی</a>
+					</li>
+					<li data-url="../group/searchgroup/searchgroup_view.php" >
+						<a href="#" da-bundle="group"><span  class="glyphicon glyphicon-volume-up"></span>نوبت دهی ریالی</a>
+					</li>
+				</ul>
+			</li>
+		</ul>
+	</div>
 </section>
 
-<!--TODO: data-url to da-url and use bundle-->
-<div id="vertical-menu" class="menu daak-vertical-menu-container no-select">
-    <ul class="daak-vertical-menu">
-		<li>
-			<input type="text"/>
-		</li>
-        <li class="daak-vertical-sub-menu">
-			<a href="#"><span class="glyphicon glyphicon-flag"></span>گروه</a>
-            <ul>
-                <li data-url="_stu/_stu_controller" >
 
-					<a href="#"><span  class="glyphicon glyphicon-menu-hamburger"></span>گروه</a>
-
-				</li>
-				<li data-url="_list/_list_controller" >
-					<a href="#" da-bundle="group"><span  class="glyphicon glyphicon-user"></span>مزایای گروه</a>
-				</li>
-				<li data-url="_group/_group_ctl" >
-					<a href="#" da-bundle="group"><span  class="glyphicon glyphicon-th-large"></span>جستجوی گروه</a>
-				</li>
-
-			</ul>
-        </li>
-
-		<li class="daak-vertical-sub-menu">
-			<a  href="#" da-bundle="group"><span class="glyphicon glyphicon-time" ></span>نوبت دهی</a>
-			<ul>
-				<li data-url="../group/searchgroup/searchgroup_view.php" >
-					<a href="#" da-bundle="group"><span  class="glyphicon glyphicon-print"></span>نوبت دهی عمومی</a>
-				</li>
-				<li data-url="../group/searchgroup/searchgroup_view.php" >
-					<a href="#" da-bundle="group"><span  class="glyphicon glyphicon-road"></span>نوبت دهی ارزی</a>
-				</li>
-				<li data-url="../group/searchgroup/searchgroup_view.php" >
-					<a href="#" da-bundle="group"><span  class="glyphicon glyphicon-volume-up"></span>نوبت دهی ریالی</a>
-				</li>
-			</ul>
-		</li>
-
-		<li class="daak-vertical-sub-menu">
-			<a  href="#" da-bundle="group"><span class="glyphicon glyphicon-time" ></span>نوبت دهی</a>
-			<ul>
-				<li data-url="../group/searchgroup/searchgroup_view.php" >
-					<a href="#" da-bundle="group"><span  class="glyphicon glyphicon-print"></span>نوبت دهی عمومی</a>
-				</li>
-				<li data-url="../group/searchgroup/searchgroup_view.php" >
-					<a href="#" da-bundle="group"><span  class="glyphicon glyphicon-road"></span>نوبت دهی ارزی</a>
-				</li>
-				<li data-url="../group/searchgroup/searchgroup_view.php" >
-					<a href="#" da-bundle="group"><span  class="glyphicon glyphicon-volume-up"></span>نوبت دهی ریالی</a>
-				</li>
-			</ul>
-		</li>
-    </ul>
-</div>
-
-<section class="container">
-<!--    <div da-type="da-message_container" da-url="assets/css/actMessage.do"></div>-->
-</section>
 
 
 
