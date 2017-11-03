@@ -439,7 +439,8 @@
 
 						var tr = formBody.parents('tr:first');
 						formBody.find(formElements).each(function (i) {
-							tr.find('[data-name=' + $(this).attr('name') + ']').html($(this).correctValue());
+							tr.find('[data-na' +
+								'me=' + $(this).attr('name') + ']').html($(this).correctValue());
 						});
 
 						return false;
@@ -889,11 +890,11 @@
 			$.openVerticalMenu();  
 		});
 		
-		$("#container").click(function(e){
+		$(".container").click(function(e){
 			$.closeVerticalMenu();
 		});
 		
-		$("#logo-img").mouseover(function(){
+		$(".brand:first").mouseover(function(){
 			$(this).cssAnimate("bounceIn");
 		});
 

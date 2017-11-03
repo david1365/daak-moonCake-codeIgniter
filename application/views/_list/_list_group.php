@@ -1,5 +1,5 @@
 
-<form action="../group/group_ctl.php" method="POST" id="add_group">
+<form action="../../controllers/_group/_group_ctl.php" method="POST" id="add_group">
 	<table id="example" class="table table-striped table-bordered table-hover" cellspacing="0" width="100%">
 		<thead style="font-weight:bold;">
 		<tr>

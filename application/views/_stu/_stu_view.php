@@ -3,7 +3,7 @@
 	ثبت گروه
 </header>
 
-<form action="../group/group_ctl.php" method="POST" id="add_group">
+<form action="../../controllers/_group/_group_ctl.php" method="POST" id="add_group">
 	<input type="hidden" name="mode" value="<?php echo "" ?>"/>
 
 	<div class="form-group" >

@@ -439,7 +439,8 @@
 
 						var tr = formBody.parents('tr:first');
 						formBody.find(formElements).each(function (i) {
-							tr.find('[data-name=' + $(this).attr('name') + ']').html($(this).correctValue());
+							tr.find('[data-na' +
+								'me=' + $(this).attr('name') + ']').html($(this).correctValue());
 						});
 
 						return false;
@@ -824,10 +825,10 @@
 			  $('.logout').show('slow');
 			 // $('.logout').cssAnimate("bounceInLeft");	
 
-			if ($(this).attr("src") == "../../share/images/educational.png"){
+			if ($(this).attr("src") == "../../share/images/logo.png"){
 				  $(this).cssAnimate("flip", function(target){
 					  target.cssAnimate("rubberBand", function(target){
-						  target.attr("src", "../../share/images/white.educational.png");
+						  target.attr("src", "../../share/images/white.logo.png");
 						  $("#logout li").show();
 					  });				  
 				  });
@@ -844,12 +845,12 @@
 				if (!container.is(e.target) // if the target of the click isn't the container...
 					&& container.has(e.target).length === 0) // ... nor a descendant of the container
 				{
-					if (container.attr("src") == "../../share/images/white.educational.png"){
+					if (container.attr("src") == "../../share/images/white.logo.png"){
 						$("#logout li").hide();
 						
 						container.cssAnimate("flip", function(target){
 							  target.cssAnimate("rubberBand", function(target){
-									target.attr("src", "../../share/images/educational.png");
+									target.attr("src", "../../share/images/logo.png");
 							  });				  
 						  });
 					}
@@ -893,7 +894,7 @@
 			$.closeVerticalMenu();
 		});
 		
-		$("#logo-img").mouseover(function(){
+		$("#logo").mouseover(function(){
 			$(this).cssAnimate("bounceIn");
 		});
 

@@ -35,9 +35,9 @@
     <!-- -------------------- -->
     <link rel="stylesheet" href="assets/css/daak/bootstrap-pnotify.custom.DA.css"/>
     <link rel="stylesheet" href="assets/css/daak/da-message-form.css"/>
-    <link rel="stylesheet" href="assets/css/daak/daak-menu.css"/>
-    <link rel="stylesheet" href="assets/css/daak/da-base.css"/>
-    <link href="assets/css/daak/da-fonts.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="daak/css/daak-menu.css"/>
+    <link rel="stylesheet" href="daak/css/daak-portal.css"/>
+    <link href="daak/css/daak-fonts.css" rel="stylesheet"/>
     <link href="assets/css/daak/da-main.css" rel="stylesheet"/>
     <link href="assets/css/daak/da-date.css" rel="stylesheet"/>
     <link href="assets/css/daak/da-print.css" rel="stylesheet"/>
@@ -45,43 +45,45 @@
     <link href="assets/css/daak/da-show_image.css" rel="stylesheet"/>
 </head>
 
-<body id="body">
+<body>
 <!-- TODO:bubdle-->
 <!-- <%@ include file="/appassets/css/register/struts-error-message.jsp"%> -->
 
-<div id="regbar">
-    <div id="navthing">
+<section class="wrapper">
+    <header >
+		<nav>
+			<img  class="logo" src="daak/images/logo.png">
+			<section class="brand">سامانه ی نوبت دهی</section>
 
-        <div class="agahi-img-container">
-            <ul id="logout">
-                <!-- TODO: bundle for password -->
-                <a href="#"  data-toggle="tooltip" data-placement="right" title="تغییر پسورد"><li id="change-password"><img alt="lock" src="assets/css/daak/images/lock.png"/></li></a>
-                <!-- TODO: bundle for logout -->
-                <a href="../login/logOut_ctl.php" data-toggle="tooltip" data-placement="right" title="خروج"><li ><img alt="lock" src="assets/css/daak/images/off.png"/></li></a>
-            </ul>
+			<div id="horizontal-menu-container" class="no-select">
+				<ul class="daak-menu daak-horizontal-menu">
+					<li id="user-icon" >
+						<a  href="#"><span  class="glyphicon glyphicon-user"></span></a>
+					</li>
 
-            <img  id="logoutMenu" class="agahi-img" src="assets/css/daak/images/educational.png">
+					<li id="menu-icon"><a href="#"><span  class="glyphicon glyphicon-menu-hamburger"></span></a>
+					</li>
 
-        </div>
+				</ul>
+			</div>
+		</nav>
 
-        <div id="logo">
-            <img id="logo-img" src="assets/css/daak/images/logo.png">
-        </div>
+<!--        <div class="agahi-img-container">-->
+<!--            <ul id="logout">-->
+<!--                <!-- TODO: bundle for password -->
+<!--                <a href="#"  data-toggle="tooltip" data-placement="right" title="تغییر پسورد"><li id="change-password"><img alt="lock" src="assets/css/daak/images/lock.png"/></li></a>-->
+<!--                <!-- TODO: bundle for logout -->
+<!--                <a href="../login/logOut_ctl.php" data-toggle="tooltip" data-placement="right" title="خروج"><li ><img alt="lock" src="assets/css/daak/images/off.png"/></li></a>-->
+<!--            </ul>-->
+<!---->
+<!--            <img  id="logoutMenu" class="agahi-img" src="assets/css/daak/images/educational.png">-->
+<!---->
+<!--        </div>-->
 
-        <div id="horizontal-menu-container" class="no-select">
-            <ul class="daak-menu daak-horizontal-menu">
-                <li id="user-icon" >
-                    <a  href="#"><span  class="glyphicon glyphicon-user"></span></a>
-                </li>
 
-                <li id="menu-icon"><a href="#"><span  class="glyphicon glyphicon-menu-hamburger"></span></a>
-                </li>
+    </header>
 
-            </ul>
-        </div>
-    </div>
-
-</div>
+</section>
 
 <!--TODO: data-url to da-url and use bundle-->
 <div id="vertical-menu" class="menu daak-vertical-menu-container no-select">
@@ -100,8 +102,8 @@
 				<li data-url="_list/_list_controller" >
 					<a href="#" da-bundle="group"><span  class="glyphicon glyphicon-user"></span>مزایای گروه</a>
 				</li>
-				<li data-url="../group/searchgroup/searchgroup_view.php" >
-					<a href="#" da-bundle="group"><span  class="glyphicon glyphicon-th-large"></span>موارد خاص</a>
+				<li data-url="_group/_group_ctl" >
+					<a href="#" da-bundle="group"><span  class="glyphicon glyphicon-th-large"></span>جستجوی گروه</a>
 				</li>
 
 			</ul>
@@ -139,9 +141,9 @@
     </ul>
 </div>
 
-<div id="container">
-    <div da-type="da-message_container" da-url="assets/css/actMessage.do"></div>
-</div>
+<section class="container">
+<!--    <div da-type="da-message_container" da-url="assets/css/actMessage.do"></div>-->
+</section>
 
 
 
@@ -227,8 +229,8 @@
 <!-- da...--------------------------------------- -->
 <script src="assets/js/daak/da-main.js"></script>
 <script src="assets/js/daak/da-XSLTransform.js"></script>
-<script src="assets/js/daak/daak-menu.js"></script>
-<script src="assets/js/daak/daak-base.js"></script>
+<script src="daak/js/daak-menu.js"></script>
+<script src="daak/js/daak-portal.js"></script>
 <script src="assets/js/daak/da-data.js"></script>
 <script src="assets/js/daak/da-date.js"></script>
 <script src="assets/js/daak/da-print.js"></script>
