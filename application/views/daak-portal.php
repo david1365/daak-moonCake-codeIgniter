@@ -53,9 +53,11 @@
     <header >
 		<nav>
 			<img  class="logo" src="daak/images/logo.png">
-			<section class="brand">سامانه ی نوبت دهی</section>
+			<section class="brand">
+				سامانه ی نوبت دهی
+			</section>
 
-			<section class="">
+<!--			<section class="header-left">-->
 				<div id="horizontal-menu-container" class="no-select">
 					<ul class="daak-menu daak-horizontal-menu">
 						<li id="user-icon" >
@@ -68,9 +70,10 @@
 					</ul>
 				</div>
 
+				<input class="daak-search" placeholder="جستجو">
 				<img  class="user" src="daak/images/user.png">
 				<a href="#"><span  class="glyphicon glyphicon-">
-			</section>
+<!--			</section>-->
 		</nav>
 
 <!--        <div class="agahi-img-container">-->
@@ -96,7 +99,7 @@
 	<div id="vertical-menu" class="menu daak-vertical-menu-container no-select">
 		<ul class="daak-vertical-menu">
 			<li>
-				<input type="text"/>
+				<input class="daak-search" type="text"/>
 			</li>
 			<li class="daak-vertical-sub-menu">
 				<a href="#"><span class="glyphicon glyphicon-flag"></span>گروه</a>
