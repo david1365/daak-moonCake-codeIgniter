@@ -11,14 +11,14 @@ body {
 }
 
 
-.wrapper {
+.daak-wrapper {
 	width: 100%;
 	margin: 3px auto;
 	height: 100%;
 	position: relative;
 }
 
-.wrapper header {
+.daak-wrapper header {
 	margin: 0;
 	padding-top: 10px;
 	box-shadow: 0 2px 4px 3px #888888;
@@ -29,11 +29,11 @@ body {
 	width: 100%;
 }
 
-.wrapper header section{
+.daak-wrapper header section{
 	display: inline-block;
 }
 
-.brand{
+.daak-brand{
 	color: white;
 	float: right;
 	margin-top: 8px;
@@ -53,9 +53,50 @@ body {
 	-moz-box-shadow: inset 0 1px 2px rgba(0,0,0,.1), 0 1px 0 rgba(255,255,255,.15);
 	box-shadow: inset 0 1px 2px rgba(0,0,0,.1), 0 1px 0 rgba(255,255,255,.15);
 	height: 28px;
-	padding-right: 5px;
+	padding: 3px 8px;
 	color: white;
 	margin-top: 5px;
+}
+
+.daak-off{
+	color: #fff;
+	margin-right: 10px;
+	background: #262626 repeat-x left bottom;
+	background-image: none;
+	background-image: -ms-linear-gradient(top, #333333, #262626);
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#333333), to(#262626));
+	background-image: -webkit-linear-gradient(top, #333333, #262626);
+	background-image: -o-linear-gradient(top, #333333, #262626);
+	background-image: -moz-linear-gradient(top, #333333, #262626);
+	background-image: linear-gradient(top, #333333, #262626);
+	border: 1px solid #000;
+	-webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.15), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+	-moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+	box-shadow: 0 1px 0 rgba(255, 255, 255, 0.15), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 100%;
+	padding: 4px 10px;
+	float: left;
+	margin-top: 3px;
+	margin-left: 10px;
+}
+
+.daak-off > span{
+	margin-top: 6px;
+}
+
+.daak-off:active
+{
+	background: #222;
+
+	-webkit-box-shadow: inset 0 2px 3px rgba(0, 0, 0, 0.25);
+	-moz-box-shadow: inset 0 2px 3px rgba(0, 0, 0, 0.25);
+	box-shadow: inset 0 2px 3px rgba(0, 0, 0, 0.25);
+}
+
+.daak-off, .daak-user{
+	cursor:pointer;
 }
 
 .agahi-img-container {
@@ -105,18 +146,18 @@ body {
 	position: absolute;
 }*/
 
-.logo{
+.daak-logo{
 	height: 45px;
 	width: 50px;
 	float: right;
 	margin-right: 10px;
 }
 
-.user {
+.daak-user {
 
 	float: left;
 	width: 45px;
-	margin-left: 10px;
+	margin-left: -6px;
 	border-radius: 100%;
 	/*! background-color: silver; */
 }
@@ -130,13 +171,13 @@ body {
 /*margin-left: -16px;*/
 /*}*/
 
-#horizontal-menu-container{
+.daak-horizontal-menu-container{
 	float: right;
 	text-align: center;
-	padding-right: 35px;
+	padding-right: 1px;
 }
 
-.container{
+.daak-container{
 	background-image: url("../images/back_image.png");
 	background-size: 100px;
 	background-attachment: fixed;

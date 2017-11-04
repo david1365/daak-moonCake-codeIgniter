@@ -23,8 +23,11 @@
 	display: none;
 
 	overflow: hidden;
-	margin-top: 66px;
-	background-image: url("../images/linen.png");
+	margin-top: 67px;
+	padding: 5px;
+	/*! background-color: rgba(68, 68, 68, 0.75); */
+	border-top: 1px solid #222;
+	background-image: url("../images/header-bg.png");
 }
 .daak-vertical-menu ul{
 	list-style-type: none;
@@ -36,6 +39,9 @@
 	border-bottom: 1px solid rgb(56, 57, 57);
 	border-top: 1px solid #4f4f4f;
 	border-bottom: 1px solid #222;
+	background-image: url("../images/linen.png");
+	border-left: 1px solid #222;
+	border-right: 1px solid #222;
 }
 
 .daak-vertical-menu li:hover{
@@ -69,8 +75,8 @@
 .daak-vertical-sub-menu li:hover{
 	text-decoration: none;
 	color: rgb(50,50,50);
-	transition-duration: 0.5s;
-	background-color: rgba(148, 219, 255, 0.2);
+	transition-duration: 0.99s;
+	/* 	background-color: rgba(148, 219, 255, 0.2); */
 }
 
 .daak-vertical-sub-menu ul a{
@@ -110,11 +116,7 @@
 	display: inline-block;
 	padding: 10px;
 }
-.daak-horizontal-menu li a:hover{
-	background-color: #eee;
-	color: #23527c;
-	border-radius: 5px;
-}
+
 .daak-title{
 
 }

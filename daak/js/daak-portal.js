@@ -4,7 +4,7 @@
 	//var scriptsRead = {};
 	var formElements = 'input, select, textarea, .da-date, button, *';
 	
-	var horizontalMenuContainer = $("#horizontal-menu-container");
+	var horizontalMenuContainer = $(".daak-horizontal-menu-container:first");
 
 	$.ajaxSetup({
 		cache: false,
@@ -881,34 +881,33 @@
             $.createModal().defaultAjaxModal(ajaxParams);
 		});
 
-		$("#user-icon").click(function(e){
-			$('#bilbord-content').modal('show');  
-		});
+		// $("#user-icon").click(function(e){
+		// 	$('#bilbord-content').modal('show');
+		// });
 		
 		$("#menu-icon").click(function(e){
 			e.stopPropagation();
 			$.openVerticalMenu();  
 		});
 		
-		$(".container").click(function(e){
+		$(".daak-container").click(function(e){
 			$.closeVerticalMenu();
 		});
 		
-		$(".brand:first").mouseover(function(){
+		$(".daak-brand:first").mouseover(function(){
 			$(this).cssAnimate("bounceIn");
 		});
 
         $(horizontalMenuContainer).createHorizontalMenu({
             verticalMenu: $.verticalMenu,
-            maxWidth: $(Document).width() - 293 - 50 - 35 - 100,
+            maxWidth: $(Document).width() -(205 + (4 *(45)) + $(".daak-brand:first").width()),
         });
-		
 		
 		$(window).resize(function(){
             $(horizontalMenuContainer).removeExtraMenu();
             $(horizontalMenuContainer).createHorizontalMenu({
                 verticalMenu: $.verticalMenu,
-                maxWidth: $(Document).width() - 293 - 50 - 35 - 100,
+                maxWidth: $(Document).width() -(205 + (4 *(45)) + $(".daak-brand:first").width()),
             });
 
 			//---resize edit body----------------------------------------

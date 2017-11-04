@@ -49,20 +49,20 @@
 <!-- TODO:bubdle-->
 <!-- <%@ include file="/appassets/css/register/struts-error-message.jsp"%> -->
 
-<section class="wrapper">
+<section class="daak-wrapper">
     <header >
 		<nav>
-			<img  class="logo" src="daak/images/logo.png">
-			<section class="brand">
-				سامانه ی نوبت دهی
+			<img  class="daak-logo" src="daak/images/logo.png">
+			<section class="daak-brand">
+			الفبای فارسی	سامانه ی نوبت دهی
 			</section>
 
 <!--			<section class="header-left">-->
-				<div id="horizontal-menu-container" class="no-select">
+				<div class="daak-horizontal-menu-container" class="no-select">
 					<ul class="daak-menu daak-horizontal-menu">
-						<li id="user-icon" >
-							<a  href="#"><span  class="glyphicon glyphicon-user"></span></a>
-						</li>
+<!--						<li id="user-icon" >-->
+<!--							<a  href="#"><span  class="glyphicon glyphicon-user"></span></a>-->
+<!--						</li>-->
 
 						<li id="menu-icon"><a href="#"><span  class="glyphicon glyphicon-menu-hamburger"></span></a>
 						</li>
@@ -71,8 +71,12 @@
 				</div>
 
 				<input class="daak-search" placeholder="جستجو">
-				<img  class="user" src="daak/images/user.png">
-				<a href="#"><span  class="glyphicon glyphicon-">
+
+
+				<section class="daak-off">
+					<span class="glyphicon glyphicon-off"></span>
+				</section>
+				<img  class="daak-user" src="daak/images/user.png">
 <!--			</section>-->
 		</nav>
 
@@ -91,16 +95,16 @@
 
     </header>
 
-	<section class="container">
+	<section class="daak-container">
 		<!--    <div da-type="da-message_container" da-url="assets/css/actMessage.do"></div>-->
 	</section>
 
 	<!--TODO: data-url to da-url and use bundle-->
 	<div id="vertical-menu" class="menu daak-vertical-menu-container no-select">
+		<section>
+			<input class="daak-search" type="text"/>
+		</section>
 		<ul class="daak-vertical-menu">
-			<li>
-				<input class="daak-search" type="text"/>
-			</li>
 			<li class="daak-vertical-sub-menu">
 				<a href="#"><span class="glyphicon glyphicon-flag"></span>گروه</a>
 				<ul>
@@ -148,6 +152,81 @@
 					</li>
 				</ul>
 			</li>
+
+			<li class="daak-vertical-sub-menu">
+				<a  href="#" da-bundle="group"><span class="glyphicon glyphicon-time" ></span>نوبت دهی</a>
+				<ul>
+					<li data-url="../group/searchgroup/searchgroup_view.php" >
+						<a href="#" da-bundle="group"><span  class="glyphicon glyphicon-print"></span>نوبت دهی عمومی</a>
+					</li>
+					<li data-url="../group/searchgroup/searchgroup_view.php" >
+						<a href="#" da-bundle="group"><span  class="glyphicon glyphicon-road"></span>نوبت دهی ارزی</a>
+					</li>
+					<li data-url="../group/searchgroup/searchgroup_view.php" >
+						<a href="#" da-bundle="group"><span  class="glyphicon glyphicon-volume-up"></span>نوبت دهی ریالی</a>
+					</li>
+				</ul>
+			</li>
+
+			<li class="daak-vertical-sub-menu">
+				<a  href="#" da-bundle="group"><span class="glyphicon glyphicon-time" ></span>نوبت دهی</a>
+				<ul>
+					<li data-url="../group/searchgroup/searchgroup_view.php" >
+						<a href="#" da-bundle="group"><span  class="glyphicon glyphicon-print"></span>نوبت دهی عمومی</a>
+					</li>
+					<li data-url="../group/searchgroup/searchgroup_view.php" >
+						<a href="#" da-bundle="group"><span  class="glyphicon glyphicon-road"></span>نوبت دهی ارزی</a>
+					</li>
+					<li data-url="../group/searchgroup/searchgroup_view.php" >
+						<a href="#" da-bundle="group"><span  class="glyphicon glyphicon-volume-up"></span>نوبت دهی ریالی</a>
+					</li>
+				</ul>
+			</li>
+
+			<li class="daak-vertical-sub-menu">
+				<a  href="#" da-bundle="group"><span class="glyphicon glyphicon-time" ></span>نوبت دهی</a>
+				<ul>
+					<li data-url="../group/searchgroup/searchgroup_view.php" >
+						<a href="#" da-bundle="group"><span  class="glyphicon glyphicon-print"></span>نوبت دهی عمومی</a>
+					</li>
+					<li data-url="../group/searchgroup/searchgroup_view.php" >
+						<a href="#" da-bundle="group"><span  class="glyphicon glyphicon-road"></span>نوبت دهی ارزی</a>
+					</li>
+					<li data-url="../group/searchgroup/searchgroup_view.php" >
+						<a href="#" da-bundle="group"><span  class="glyphicon glyphicon-volume-up"></span>نوبت دهی ریالی</a>
+					</li>
+				</ul>
+			</li>
+
+			<li class="daak-vertical-sub-menu">
+				<a  href="#" da-bundle="group"><span class="glyphicon glyphicon-time" ></span>نوبت دهی</a>
+				<ul>
+					<li data-url="../group/searchgroup/searchgroup_view.php" >
+						<a href="#" da-bundle="group"><span  class="glyphicon glyphicon-print"></span>نوبت دهی عمومی</a>
+					</li>
+					<li data-url="../group/searchgroup/searchgroup_view.php" >
+						<a href="#" da-bundle="group"><span  class="glyphicon glyphicon-road"></span>نوبت دهی ارزی</a>
+					</li>
+					<li data-url="../group/searchgroup/searchgroup_view.php" >
+						<a href="#" da-bundle="group"><span  class="glyphicon glyphicon-volume-up"></span>نوبت دهی ریالی</a>
+					</li>
+				</ul>
+			</li>
+
+			<li class="daak-vertical-sub-menu">
+				<a  href="#" da-bundle="group"><span class="glyphicon glyphicon-time" ></span>نوبت دهی</a>
+				<ul>
+					<li data-url="../group/searchgroup/searchgroup_view.php" >
+						<a href="#" da-bundle="group"><span  class="glyphicon glyphicon-print"></span>نوبت دهی عمومی</a>
+					</li>
+					<li data-url="../group/searchgroup/searchgroup_view.php" >
+						<a href="#" da-bundle="group"><span  class="glyphicon glyphicon-road"></span>نوبت دهی ارزی</a>
+					</li>
+					<li data-url="../group/searchgroup/searchgroup_view.php" >
+						<a href="#" da-bundle="group"><span  class="glyphicon glyphicon-volume-up"></span>نوبت دهی ریالی</a>
+					</li>
+				</ul>
+			</li>
 		</ul>
 	</div>
 </section>
@@ -157,39 +236,39 @@
 
 
 <!-- ------------------------------------------   -->
-<div id="bilbord-content" class="modal fade" tabindex="-1" role="dialog">
-    <div class="modal-dialog" role="document">
-        <div id="bilbord" class="modal-content">
-
-            <div class="modal-body">
-                <div id="title-container">
-                    <div id="title">
-                        <!-- TODO:bubdle-->
-                        سامانه ی تستی
-                    </div>
-                    <div id="agahi-image-bilbord">
-                        <img class="agahi-img" src="assets/css/daak/images/educational.png">
-                    </div>
-                </div>
-
-                <div id="bilbord-details">
-                    <div>
-                        <!-- TODO:bubdle-->
-                        name karbarey : <span> user_name user_family</span>
-                    </div>
-                    <!-- TODO:bubdle-->
-                    <div>time : <span>date</span> </div>
-                    <!-- TODO:bubdle-->
-                    <div>enter : <span>enter time</span></div>
-                    <!-- TODO:bubdle-->
-                    <div> <strong>version</strong></div>
-                </div>
-            </div>
-
-        </div><!-- /.modal-content -->
-    </div><!-- /.modal-dialog -->
-</div><!-- /.modal -->
-</div>
+<!--<div id="bilbord-content" class="modal fade" tabindex="-1" role="dialog">-->
+<!--    <div class="modal-dialog" role="document">-->
+<!--        <div id="bilbord" class="modal-content">-->
+<!---->
+<!--            <div class="modal-body">-->
+<!--                <div id="title-container">-->
+<!--                    <div id="title">-->
+<!--                        <!-- TODO:bubdle-->-->
+<!--                        سامانه ی تستی-->
+<!--                    </div>-->
+<!--                    <div id="agahi-image-bilbord">-->
+<!--                        <img class="agahi-img" src="assets/css/daak/images/educational.png">-->
+<!--                    </div>-->
+<!--                </div>-->
+<!---->
+<!--                <div id="bilbord-details">-->
+<!--                    <div>-->
+<!--                        <!-- TODO:bubdle-->-->
+<!--                        name karbarey : <span> user_name user_family</span>-->
+<!--                    </div>-->
+<!--                    <!-- TODO:bubdle-->-->
+<!--                    <div>time : <span>date</span> </div>-->
+<!--                    <!-- TODO:bubdle-->-->
+<!--                    <div>enter : <span>enter time</span></div>-->
+<!--                    <!-- TODO:bubdle-->-->
+<!--                    <div> <strong>version</strong></div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!---->
+<!--        </div><!-- /.modal-content -->-->
+<!--    </div><!-- /.modal-dialog -->-->
+<!--</div><!-- /.modal -->-->
+<!--</div>-->
 
 
 

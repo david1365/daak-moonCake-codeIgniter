@@ -185,14 +185,14 @@ body
 	vertical-align: middle;
 }
 
-#header .navbar-inner .brand
+#header .navbar-inner .daak-brand
 {
 	padding-bottom: 0;
 	padding-top: 0;
 	float: none;
 }
 
-#header .navbar-inner .brand img
+#header .navbar-inner .daak-brand img
 {
 	max-height: 100%;
 }
@@ -1423,13 +1423,13 @@ body
 		display: block;
 	}
 
-	#header .brand-wrap .brand-img .brand
+	#header .brand-wrap .brand-img .daak-brand
 	{
 		padding-top: 15px;
 		position: relative;
 	}
 
-	#header .brand-wrap .brand-img .brand img
+	#header .brand-wrap .brand-img .daak-brand img
 	{
 		max-height: 37px;
 	}

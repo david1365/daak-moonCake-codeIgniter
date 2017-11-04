@@ -39,13 +39,13 @@ header h1 {
   float: left;
 }
 
-.wrapper {  
+.daak-wrapper {
   padding: 15px 30px;
   transition: all 0.3s ease-out;
   margin: 0;
 }
 
-.wrapper section{
+.daak-wrapper section{
       padding-top: 70px;
   }
   
@@ -78,7 +78,7 @@ header h1 {
     float: none;
   }
 
-  .wrapper {
+  .daak-wrapper {
     margin-left: 200px;
   }
 
