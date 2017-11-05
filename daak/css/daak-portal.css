@@ -157,11 +157,19 @@ body {
 }
 
 .daak-user{
-	float: left;
-	width: 45px;
-	margin-left: -6px;
+	border: 1px solid #000;
+	-webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.15), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+	-moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+	box-shadow: 0 1px 0 rgba(255, 255, 255, 0.15), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
 	border-radius: 100%;
 	/*! background-color: silver; */
+}
+
+.daak-user-name{
+	color: #ff7e00;
+	margin-top: 5px;
 }
 
 #daak-circle-menu{
@@ -287,18 +295,26 @@ a:hover, a:FOCUS, a:VISITED{
 
 @media (max-width: 319px){
 	.daak-brand {
-		max-width: 230px;
+		margin-top: 3.5vw;
+		font-size: 5vw;
+	}
+}
+
+/*@media (max-width: 300px){*/
+/*.daak-brand {*/
+/*max-width: 210px;*/
+/*}*/
+/*}*/
+
+@media (max-width: 279px){
+	.daak-brand {
+		max-width: 64vw;
+		font-size: 15px;
 		text-overflow: ellipsis;
 
 		/* Required for text-overflow to do anything */
 		white-space: nowrap;
 		overflow: hidden;
-	}
-}
-
-@media (max-width: 300px){
-	.daak-brand {
-		max-width: 210px;
 	}
 }
 

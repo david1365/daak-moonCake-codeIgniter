@@ -24,10 +24,11 @@
 
 	overflow: hidden;
 	margin-top: 67px;
-	padding: 5px;
+	padding: 5px 5px 5px 10px;
 	/*! background-color: rgba(68, 68, 68, 0.75); */
 	border-top: 1px solid #222;
-	background-image: url("../images/header-bg.png");
+	background-image: url("../images/menu-bg.png");
+	background-repeat: repeat-y;
 }
 .daak-vertical-menu ul{
 	list-style-type: none;
@@ -46,10 +47,10 @@
 
 .daak-vertical-menu li:hover{
 	text-decoration: none;
-	background-color: rgba(186, 186, 186, 0.5);
 
 	transition-duration: 0.5s;
 	/*! color: rgb(14, 13, 13); */
+	background-color: rgba(148, 219, 255, 0.2);
 }
 
 .daak-vertical-menu a, .daak-vertical-menu a:hover, .daak-vertical-menu a:active, daak-vertical-menu a:focus{
@@ -176,6 +177,12 @@
 	text-align: justify;
 }
 
+
+.daak-extea-menu {
+
+	margin-bottom: 10px;
+	text-align: center;
+}
 
 @media (max-width: 505px){
 	.daak-search-menu{
