@@ -737,11 +737,11 @@
 	//---------------------------
 	$.fn.removeExtraMenu = function(){
 		$(this).find('ul:first').find('li').each(function(index){
-			if(($(this).attr("id") != "user-icon") && ($(this).attr("id") != "menu-icon")){
+			// if(($(this).attr("id") != "user-icon") && ($(this).attr("id") != "menu-icon")){
 				$(this).unbind();
 				$(this).off();
 				$(this).remove();
-			}
+			// }
 		});
 	};
 //---------------------------------------------
@@ -802,7 +802,8 @@
 						});
 					}
 
-					$("#menu-icon").before(li);
+					// $("#menu-icon").before(li);
+					$(".daak-horizontal-menu:first").append(li);
 					
 					if(horizontalMenuContainer.width() >= maxWidth){
 						li.remove();
@@ -820,53 +821,53 @@
 	
 	$(document).ready(function() {
 		
-		$('#logoutMenu').click(function(){
-			  //$('.logout').fadeToggle('slow');
-			  $('.logout').show('slow');
-			 // $('.logout').cssAnimate("bounceInLeft");	
+		// $('#logoutMenu').click(function(){
+		// 	  //$('.logout').fadeToggle('slow');
+		// 	  $('.logout').show('slow');
+		// 	 // $('.logout').cssAnimate("bounceInLeft");
+        //
+		// 	if ($(this).attr("src") == "../../share/images/logo.png"){
+		// 		  $(this).cssAnimate("flip", function(target){
+		// 			  target.cssAnimate("rubberBand", function(target){
+		// 				  target.attr("src", "../../share/images/white.logo.png");
+		// 				  $("#logout li").show();
+		// 			  });
+		// 		  });
+		// 	}
+		// });
 
-			if ($(this).attr("src") == "../../share/images/logo.png"){
-				  $(this).cssAnimate("flip", function(target){
-					  target.cssAnimate("rubberBand", function(target){
-						  target.attr("src", "../../share/images/white.logo.png");
-						  $("#logout li").show();
-					  });				  
-				  });
-			}
-		});
-
-		$(document).mouseup(function (e)
-		{
-			var screenwidth = $( window ).width();
-			
-			var container = $("#logoutMenu");
-
-			//if (screenwidth > 584){
-				if (!container.is(e.target) // if the target of the click isn't the container...
-					&& container.has(e.target).length === 0) // ... nor a descendant of the container
-				{
-					if (container.attr("src") == "../../share/images/white.logo.png"){
-						$("#logout li").hide();
-						
-						container.cssAnimate("flip", function(target){
-							  target.cssAnimate("rubberBand", function(target){
-									target.attr("src", "../../share/images/logo.png");
-							  });				  
-						  });
-					}
-					
-					
-					
-					//container.cssAnimate("hinge", function(){
-						//container.hide('slow');
-					//});
-					
-					//$.restorDefaultMenu();
-				}
-			//}
-			
-			
-		});
+		// $(document).mouseup(function (e)
+		// {
+		// 	var screenwidth = $( window ).width();
+		//
+		// 	var container = $("#logoutMenu");
+        //
+		// 	//if (screenwidth > 584){
+		// 		if (!container.is(e.target) // if the target of the click isn't the container...
+		// 			&& container.has(e.target).length === 0) // ... nor a descendant of the container
+		// 		{
+		// 			if (container.attr("src") == "../../share/images/white.logo.png"){
+		// 				$("#logout li").hide();
+		//
+		// 				container.cssAnimate("flip", function(target){
+		// 					  target.cssAnimate("rubberBand", function(target){
+		// 							target.attr("src", "../../share/images/logo.png");
+		// 					  });
+		// 				  });
+		// 			}
+		//
+		//
+		//
+		// 			//container.cssAnimate("hinge", function(){
+		// 				//container.hide('slow');
+		// 			//});
+		//
+		// 			//$.restorDefaultMenu();
+		// 		}
+		// 	//}
+		//
+		//
+		// });
 
 		$("#change-password").bind("click", function(e){
 			var ajaxParams = {};
@@ -885,7 +886,7 @@
 		// 	$('#bilbord-content').modal('show');
 		// });
 		
-		$("#menu-icon").click(function(e){
+		$("#daak-menu-icon").click(function(e){
 			e.stopPropagation();
 			$.openVerticalMenu();  
 		});
@@ -900,14 +901,14 @@
 
         $(horizontalMenuContainer).createHorizontalMenu({
             verticalMenu: $.verticalMenu,
-            maxWidth: $(Document).width() -(205 + (4 *(45)) + $(".daak-brand:first").width()),
+            maxWidth: $(Document).width() -(205 + (5 *(50)) + $(".daak-brand:first").width()),
         });
 		
 		$(window).resize(function(){
             $(horizontalMenuContainer).removeExtraMenu();
             $(horizontalMenuContainer).createHorizontalMenu({
                 verticalMenu: $.verticalMenu,
-                maxWidth: $(Document).width() -(205 + (4 *(45)) + $(".daak-brand:first").width()),
+                maxWidth: $(Document).width() -(205 + (5 *(50)) + $(".daak-brand:first").width()),
             });
 
 			//---resize edit body----------------------------------------

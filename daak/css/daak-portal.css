@@ -40,7 +40,9 @@ body {
 	margin-right: 10px;
 	font-size: 18px;
 	padding-left: 5px;
+}
 
+.daak-brand{
 	border-left: 1px rgb(111, 93, 81) dashed;
 }
 
@@ -56,11 +58,12 @@ body {
 	padding: 3px 8px;
 	color: white;
 	margin-top: 5px;
+	margin-right: 3px;
 }
 
-.daak-off{
+.daak-circle{
 	color: #fff;
-	margin-right: 10px;
+	/*! margin-right: 10px; */
 	background: #262626 repeat-x left bottom;
 	background-image: none;
 	background-image: -ms-linear-gradient(top, #333333, #262626);
@@ -82,12 +85,11 @@ body {
 	margin-left: 10px;
 }
 
-.daak-off > span{
+.daak-circle > span{
 	margin-top: 6px;
 }
 
-.daak-off:active
-{
+.daak-circle:active{
 	background: #222;
 
 	-webkit-box-shadow: inset 0 2px 3px rgba(0, 0, 0, 0.25);
@@ -95,52 +97,52 @@ body {
 	box-shadow: inset 0 2px 3px rgba(0, 0, 0, 0.25);
 }
 
-.daak-off, .daak-user{
+.daak-circle, .daak-user{
 	cursor:pointer;
 }
 
-.agahi-img-container {
-	float: left;
-	margin-left: 50px;
-	margin-top: -20px;
-	padding: 10px;
-}
-.agahi-img-container li{
-	text-decoration: none;
-	position: relative;
+/*.agahi-img-container {*/
+/*float: left;*/
+/*margin-left: 50px;*/
+/*margin-top: -20px;*/
+/*padding: 10px;*/
+/*}*/
+/*.agahi-img-container li{*/
+/*text-decoration: none;*/
+/*position: relative;*/
 
-	z-index: 1;
+/*z-index: 1;*/
 
-	border-radius : 100%;
-	width: 50px;
-	height: 50px;
-	list-style: none;
-	text-align: center;
-	padding-top: 8px;
+/*border-radius : 100%;*/
+/*width: 50px;*/
+/*height: 50px;*/
+/*list-style: none;*/
+/*text-align: center;*/
+/*padding-top: 8px;*/
 
-	display: none;
-	padding-top: 15px;
-	padding-left: 1px;
-}
-.agahi-img-container li:hover{
-	background-color: transparent;
-	box-shadow: 0 0px 12px rgba(0,0,0,.175);
-}
-.agahi-img-container li img{
-	margin-top: -5px;
-}
-.agahi-img-container ul{
-	position: absolute;
+/*display: none;*/
+/*padding-top: 15px;*/
+/*padding-left: 1px;*/
+/*}*/
+/*.agahi-img-container li:hover{*/
+/*background-color: transparent;*/
+/*box-shadow: 0 0px 12px rgba(0,0,0,.175);*/
+/*}*/
+/*.agahi-img-container li img{*/
+/*margin-top: -5px;*/
+/*}*/
+/*.agahi-img-container ul{*/
+/*position: absolute;*/
 
-	margin-top: 5px;
-	margin-right: 35px;
-}
+/*margin-top: 5px;*/
+/*margin-right: 35px;*/
+/*}*/
 
-.agahi-img{
-	height: 110px;
-	width: 120px;
-	z-index: 0;
-}
+/*.agahi-img{*/
+/*height: 110px;*/
+/*width: 120px;*/
+/*z-index: 0;*/
+/*}*/
 
 /*#logout{
 	position: absolute;
@@ -153,13 +155,16 @@ body {
 	margin-right: 10px;
 }
 
-.daak-user {
-
+.daak-user{
 	float: left;
 	width: 45px;
 	margin-left: -6px;
 	border-radius: 100%;
 	/*! background-color: silver; */
+}
+
+#daak-circle-menu{
+	float: left;
 }
 
 /*#logo{*/
@@ -235,44 +240,111 @@ a:hover, a:FOCUS, a:VISITED{
 	margin-top: 20px;
 }
 
-#bilbord{
-	background-image: url("../images/iran-flag.png");
-	background-repeat: no-repeat;
-	background-position: center;
-	background-clip: content-box;
-	background-attachment: fixed;
-	background-color: black;
+/*#bilbord{*/
+/*background-image: url("../images/iran-flag.png");*/
+/*background-repeat: no-repeat;*/
+/*background-position: center;*/
+/*background-clip: content-box;*/
+/*background-attachment: fixed;*/
+/*background-color: black;*/
 
-	bolder-radius: 5px !important;
+/*bolder-radius: 5px !important;*/
+/*}*/
+
+/*#agahi-image-bilbord{*/
+/*margin-top: -30px;*/
+/*float: left;*/
+/*}*/
+
+/*#bilbord-details{*/
+/*margin-top: 120px;*/
+/*width: 100%;*/
+/*text-align: center;*/
+/*font-size: 24px;*/
+/*color: white;*/
+/*text-shadow: 2px 2px 5px #24659c;*/
+/*font-family: IRANSans;*/
+
+/*background-color: rgba(52,73,94, 0.5);*/
+/*}*/
+/*#bilbord-details div{*/
+/*display: inline-block;*/
+/*margin-left: 50px;*/
+/*border-radius: 100%;*/
+/*margin-right: 10px;*/
+/*}*/
+/*#bilbord-details div > span{*/
+/*font-weight: bold;*/
+/*font-size: 20px;*/
+/*text-shadow: 2px 2px 3px back;*/
+/*}*/
+
+
+#sidebar{
+	display: none;
 }
 
-#agahi-image-bilbord{
-	margin-top: -30px;
-	float: left;
+
+@media (max-width: 669px){
+	.daak-search{
+		width: 150px;
+	}
 }
 
-#bilbord-details{
-	margin-top: 120px;
-	width: 100%;
-	text-align: center;
-	font-size: 24px;
-	color: white;
-	text-shadow: 2px 2px 5px #24659c;
-	font-family: IRANSans;
+@media (max-width: 616px){
+	.daak-search{
+		display: none;
+	}
+}
 
-	background-color: rgba(52,73,94, 0.5);
+@media (max-width: 467px){
+	.daak-brand{
+		/* 		display: block; */
+		/* 		width: 100%; */
+	}
+
+	#daak-circle-menu{
+		display: block !important;
+		width: 100%;
+		background-image: url("../images/linen.png");
+		margin-top: 12px;
+		padding: 10px;
+		clear: both;
+		text-align: center;
+		/*! border-bottom: 1px solid #222; */
+		/* 		box-shadow: 0 4px 4px 3px #888888; */
+		margin-bottom: -4px;
+	}
+	.daak-circle{
+		float: right;
+	}
+
+	#daak-menu-icon{
+		float: left;
+	}
+
+	#sidebar
+	{
+		display: inline-block;
+		max-width: none;
+		width: 100%;
+		position: relative;
+		float: none;
+		/*! display: block; */
+		border-top: 1px solid #222;
+		padding-bottom: 8px;
+		background-image: url(../images/linen.png);
+		-webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 2px rgba(0, 0, 0, 0.25);
+		-moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 2px rgba(0, 0, 0, 0.25);
+		box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 2px rgba(0, 0, 0, 0.25);
+		margin-top: -16px;
+	}
 }
-#bilbord-details div{
-	display: inline-block;
-	margin-left: 50px;
-	border-radius: 100%;
-	margin-right: 10px;
-}
-#bilbord-details div > span{
-	font-weight: bold;
-	font-size: 20px;
-	text-shadow: 2px 2px 3px back;
-}
+
+
+
+
+
 
 
 @media (max-width: 620px){

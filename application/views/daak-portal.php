@@ -57,15 +57,14 @@
 			الفبای فارسی	سامانه ی نوبت دهی
 			</section>
 
-<!--			<section class="header-left">-->
 				<div class="daak-horizontal-menu-container" class="no-select">
 					<ul class="daak-menu daak-horizontal-menu">
 <!--						<li id="user-icon" >-->
 <!--							<a  href="#"><span  class="glyphicon glyphicon-user"></span></a>-->
 <!--						</li>-->
 
-						<li id="menu-icon"><a href="#"><span  class="glyphicon glyphicon-menu-hamburger"></span></a>
-						</li>
+<!--						<li id="menu-icon"><a href="#"><span  class="glyphicon glyphicon-menu-hamburger"></span></a>-->
+<!--						</li>-->
 
 					</ul>
 				</div>
@@ -73,11 +72,26 @@
 				<input class="daak-search" placeholder="جستجو">
 
 
-				<section class="daak-off">
+			<section id="daak-circle-menu">
+				<section class="daak-circle">
 					<span class="glyphicon glyphicon-off"></span>
 				</section>
-				<img  class="daak-user" src="daak/images/user.png">
+
+<!--			<section class="daak-off">-->
+<!--				<img  class="daak-user" src="daak/images/user.png">-->
 <!--			</section>-->
+<!---->
+				<section class="daak-circle">
+					<span class="glyphicon glyphicon-envelope"></span>
+				</section>
+
+
+				<section id="daak-menu-icon" class="daak-circle">
+					<span class="glyphicon glyphicon-menu-hamburger"></span>
+				</section>
+			</section>
+
+			<section id="sidebar"></section>
 		</nav>
 
 <!--        <div class="agahi-img-container">-->
@@ -139,7 +153,7 @@
 			</li>
 
 			<li class="daak-vertical-sub-menu">
-				<a  href="#" da-bundle="group"><span class="glyphicon glyphicon-time" ></span>نوبت دهی</a>
+				<a  href="#" da-bundle="group"><span class="glyphicon glyphicon-time" ></span>ارزی ریالی</a>
 				<ul>
 					<li data-url="../group/searchgroup/searchgroup_view.php" >
 						<a href="#" da-bundle="group"><span  class="glyphicon glyphicon-print"></span>نوبت دهی عمومی</a>
@@ -154,7 +168,7 @@
 			</li>
 
 			<li class="daak-vertical-sub-menu">
-				<a  href="#" da-bundle="group"><span class="glyphicon glyphicon-time" ></span>نوبت دهی</a>
+				<a  href="#" da-bundle="group"><span class="glyphicon glyphicon-time" ></span>مشاوره ای</a>
 				<ul>
 					<li data-url="../group/searchgroup/searchgroup_view.php" >
 						<a href="#" da-bundle="group"><span  class="glyphicon glyphicon-print"></span>نوبت دهی عمومی</a>
@@ -169,7 +183,7 @@
 			</li>
 
 			<li class="daak-vertical-sub-menu">
-				<a  href="#" da-bundle="group"><span class="glyphicon glyphicon-time" ></span>نوبت دهی</a>
+				<a  href="#" da-bundle="group"><span class="glyphicon glyphicon-time" ></span>دندان پزشکی</a>
 				<ul>
 					<li data-url="../group/searchgroup/searchgroup_view.php" >
 						<a href="#" da-bundle="group"><span  class="glyphicon glyphicon-print"></span>نوبت دهی عمومی</a>
@@ -184,7 +198,7 @@
 			</li>
 
 			<li class="daak-vertical-sub-menu">
-				<a  href="#" da-bundle="group"><span class="glyphicon glyphicon-time" ></span>نوبت دهی</a>
+				<a  href="#" da-bundle="group"><span class="glyphicon glyphicon-time" ></span>ارشدیت</a>
 				<ul>
 					<li data-url="../group/searchgroup/searchgroup_view.php" >
 						<a href="#" da-bundle="group"><span  class="glyphicon glyphicon-print"></span>نوبت دهی عمومی</a>
@@ -199,7 +213,7 @@
 			</li>
 
 			<li class="daak-vertical-sub-menu">
-				<a  href="#" da-bundle="group"><span class="glyphicon glyphicon-time" ></span>نوبت دهی</a>
+				<a  href="#" da-bundle="group"><span class="glyphicon glyphicon-time" ></span>لوازم خانگی</a>
 				<ul>
 					<li data-url="../group/searchgroup/searchgroup_view.php" >
 						<a href="#" da-bundle="group"><span  class="glyphicon glyphicon-print"></span>نوبت دهی عمومی</a>
@@ -214,7 +228,7 @@
 			</li>
 
 			<li class="daak-vertical-sub-menu">
-				<a  href="#" da-bundle="group"><span class="glyphicon glyphicon-time" ></span>نوبت دهی</a>
+				<a  href="#" da-bundle="group"><span class="glyphicon glyphicon-time" ></span>اسب سواری</a>
 				<ul>
 					<li data-url="../group/searchgroup/searchgroup_view.php" >
 						<a href="#" da-bundle="group"><span  class="glyphicon glyphicon-print"></span>نوبت دهی عمومی</a>
