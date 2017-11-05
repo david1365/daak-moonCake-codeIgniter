@@ -19,6 +19,7 @@ body {
 }
 
 .daak-wrapper header {
+	position: fixed;
 	margin: 0;
 	padding-top: 10px;
 	box-shadow: 0 2px 4px 3px #888888;
@@ -284,6 +285,22 @@ a:hover, a:FOCUS, a:VISITED{
 	display: none;
 }
 
+@media (max-width: 319px){
+	.daak-brand {
+		max-width: 230px;
+		text-overflow: ellipsis;
+
+		/* Required for text-overflow to do anything */
+		white-space: nowrap;
+		overflow: hidden;
+	}
+}
+
+@media (max-width: 300px){
+	.daak-brand {
+		max-width: 210px;
+	}
+}
 
 @media (max-width: 669px){
 	.daak-search{
