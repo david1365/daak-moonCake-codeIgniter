@@ -15,15 +15,22 @@
 .daak-vertical-menu-container{
 	position: absolute;
 	width: 250px;
-	height: 100%;
+
+	height: -webkit-calc(100% -  67px);
+	height: -moz-calc(100% -  67px);
+	height: -khtml-calc(100% -  67px);
+	height: -ms-calc(100% -  67px);
+	height: -o-calc(100% -  67px);
+	height: calc(100% -  67px);
+
 	/*! background: rgba(0, 0, 0, 0.98); */
 	/*! border: 1px solid rgb(0, 0, 0); */
-	top: 0px;
+	top: 67px;
 	z-index: 5;
 	display: none;
 
 	overflow: hidden;
-	margin-top: 67px;
+	/*margin-top: 67px;*/
 	padding: 5px 5px 5px 10px;
 	/*! background-color: rgba(68, 68, 68, 0.75); */
 	border-top: 1px solid #222;
