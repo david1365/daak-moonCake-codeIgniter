@@ -36,6 +36,8 @@
 	border-top: 1px solid #222;
 	background-image: url("../images/menu-bg.png");
 	background-repeat: repeat-y;
+
+	right: 0px;
 }
 .daak-vertical-menu ul{
 	list-style-type: none;

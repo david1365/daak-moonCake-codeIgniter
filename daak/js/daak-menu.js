@@ -15,7 +15,8 @@
 			$.verticalMenuMoving = true;
 			
 			$(verticalMenu).show();			
-			$(verticalMenu).cssAnimate("slideInRight", function(){
+			$(verticalMenu).cssAnimate("slideInRight", function(target){
+				$(target).show();
 				$.verticalMenuMoving = false;
 				$.verticalMenuClosed = false;
 			});
