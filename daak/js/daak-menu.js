@@ -48,11 +48,11 @@
 
 	});
 	
-	$(verticalMenu).bind("click", function(){
-		if ($(verticalMenu).yScrolled == false){
-			$.closeVerticalMenu();
-		}
-	});
+	// $(verticalMenu).bind("click", function(){
+	// 	if ($(verticalMenu).yScrolled == false){
+	// 		$.closeVerticalMenu();
+	// 	}
+	// });
 	
 	$(verticalMenu).find("li").each(function(index){
 			$(this).bind("click", function(e){
@@ -70,8 +70,9 @@
 					else{
 						$.closeVerticalMenu();
 					}
-					
-					var top = $(this).offset().top;
+
+					var verticalMenuTop = $(this).parents(".daak-vertical-menu-container:first").offset().top;
+					var top = $(this).offset().top - (verticalMenuTop + 3);
 					var height = $(this).height() + 24;
 					var verticalMenuHeight = $(verticalMenu).height();
 					var bottom = (top + height);

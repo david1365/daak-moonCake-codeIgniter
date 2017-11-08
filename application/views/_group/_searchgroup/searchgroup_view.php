@@ -1,5 +1,5 @@
 <!-- --v-david 1396-07-03 -->
-<?php include '../../../share/core/php/error_message.php';?>
+<?php //include '../../../share/core/php/error_message.php';?>
 
 <form action="../group/group_ctl.php" method="POST" id="search_group">
   <input type="hidden" name="mode"/>

@@ -114,7 +114,7 @@
 	</section>
 
 	<!--TODO: data-url to da-url and use bundle-->
-	<div id="vertical-menu" class="menu daak-vertical-menu-container no-select">
+	<div id="vertical-menu" class="daak-vertical-menu-container no-select">
 		<section class="daak-extea-menu">
 			<img  class="daak-user" src="daak/images/user.png">
 			<section class="daak-user-name">داود اکبری </section>
