@@ -391,7 +391,7 @@
 <script src="assets/js/scripts/html2canvas.js"></script>
 
 <!-- da...--------------------------------------- -->
-<script src="assets/js/daak/da-main.js"></script>
+<script src="daak/js/daak-main.js"></script>
 <script src="assets/js/daak/da-XSLTransform.js"></script>
 <script src="daak/js/daak-menu.js"></script>
 <script src="daak/js/daak-portal.js"></script>
