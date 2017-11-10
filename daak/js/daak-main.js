@@ -5,7 +5,11 @@
 	
 	$.elementCount = 0;
 	$.elements = {};
-	
+
+//-----------------------------------------------
+	$.fn.daak = function (attrData) {
+		return $(this).attr("daak-" + attrData);
+	}
 //-----------------------------------------------
 	$.fn.getElementUrl = function () {
 		var formBody = $(this).getForm();

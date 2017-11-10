@@ -124,15 +124,15 @@
 			<li class="daak-vertical-sub-menu">
 				<a href="#"><span class="glyphicon glyphicon-flag"></span>گروه</a>
 				<ul>
-					<li data-url="_stu/_stu_controller" >
+					<li daak-url="_stu/_stu_controller" >
 
 						<a href="#"><span  class="glyphicon glyphicon-menu-hamburger"></span>گروه</a>
 
 					</li>
-					<li data-url="_list/_list_controller" >
+					<li daak-url="_list/_list_controller" >
 						<a href="#" da-bundle="group"><span  class="glyphicon glyphicon-user"></span>مزایای گروه</a>
 					</li>
-					<li data-url="_group/_group_ctl" >
+					<li daak-url="_group/_group_ctl" >
 						<a href="#" da-bundle="group"><span  class="glyphicon glyphicon-th-large"></span>جستجوی گروه</a>
 					</li>
 
@@ -142,13 +142,13 @@
 			<li class="daak-vertical-sub-menu">
 				<a  href="#" da-bundle="group"><span class="glyphicon glyphicon-time" ></span>نوبت دهی</a>
 				<ul>
-					<li data-url="../group/searchgroup/searchgroup_view.php" >
+					<li daak-url="../group/searchgroup/searchgroup_view.php" >
 						<a href="#" da-bundle="group"><span  class="glyphicon glyphicon-print"></span>نوبت دهی عمومی</a>
 					</li>
-					<li data-url="../group/searchgroup/searchgroup_view.php" >
+					<li daak-url="../group/searchgroup/searchgroup_view.php" >
 						<a href="#" da-bundle="group"><span  class="glyphicon glyphicon-road"></span>نوبت دهی ارزی</a>
 					</li>
-					<li data-url="../group/searchgroup/searchgroup_view.php" >
+					<li daak-url="../group/searchgroup/searchgroup_view.php" >
 						<a href="#" da-bundle="group"><span  class="glyphicon glyphicon-volume-up"></span>نوبت دهی ریالی</a>
 					</li>
 				</ul>
@@ -157,13 +157,13 @@
 			<li class="daak-vertical-sub-menu">
 				<a  href="#" da-bundle="group"><span class="glyphicon glyphicon-time" ></span>ارزی ریالی</a>
 				<ul>
-					<li data-url="../group/searchgroup/searchgroup_view.php" >
+					<li daak-url="../group/searchgroup/searchgroup_view.php" >
 						<a href="#" da-bundle="group"><span  class="glyphicon glyphicon-print"></span>نوبت دهی عمومی</a>
 					</li>
-					<li data-url="../group/searchgroup/searchgroup_view.php" >
+					<li daak-url="../group/searchgroup/searchgroup_view.php" >
 						<a href="#" da-bundle="group"><span  class="glyphicon glyphicon-road"></span>نوبت دهی ارزی</a>
 					</li>
-					<li data-url="../group/searchgroup/searchgroup_view.php" >
+					<li daak-url="../group/searchgroup/searchgroup_view.php" >
 						<a href="#" da-bundle="group"><span  class="glyphicon glyphicon-volume-up"></span>نوبت دهی ریالی</a>
 					</li>
 				</ul>
@@ -172,13 +172,13 @@
 			<li class="daak-vertical-sub-menu">
 				<a  href="#" da-bundle="group"><span class="glyphicon glyphicon-time" ></span>مشاوره ای</a>
 				<ul>
-					<li data-url="../group/searchgroup/searchgroup_view.php" >
+					<li daak-url="../group/searchgroup/searchgroup_view.php" >
 						<a href="#" da-bundle="group"><span  class="glyphicon glyphicon-print"></span>نوبت دهی عمومی</a>
 					</li>
-					<li data-url="../group/searchgroup/searchgroup_view.php" >
+					<li daak-url="../group/searchgroup/searchgroup_view.php" >
 						<a href="#" da-bundle="group"><span  class="glyphicon glyphicon-road"></span>نوبت دهی ارزی</a>
 					</li>
-					<li data-url="../group/searchgroup/searchgroup_view.php" >
+					<li daak-url="../group/searchgroup/searchgroup_view.php" >
 						<a href="#" da-bundle="group"><span  class="glyphicon glyphicon-volume-up"></span>نوبت دهی ریالی</a>
 					</li>
 				</ul>
@@ -187,13 +187,13 @@
 			<li class="daak-vertical-sub-menu">
 				<a  href="#" da-bundle="group"><span class="glyphicon glyphicon-time" ></span>دندان پزشکی</a>
 				<ul>
-					<li data-url="../group/searchgroup/searchgroup_view.php" >
+					<li daak-url="../group/searchgroup/searchgroup_view.php" >
 						<a href="#" da-bundle="group"><span  class="glyphicon glyphicon-print"></span>نوبت دهی عمومی</a>
 					</li>
-					<li data-url="../group/searchgroup/searchgroup_view.php" >
+					<li daak-url="../group/searchgroup/searchgroup_view.php" >
 						<a href="#" da-bundle="group"><span  class="glyphicon glyphicon-road"></span>نوبت دهی ارزی</a>
 					</li>
-					<li data-url="../group/searchgroup/searchgroup_view.php" >
+					<li daak-url="../group/searchgroup/searchgroup_view.php" >
 						<a href="#" da-bundle="group"><span  class="glyphicon glyphicon-volume-up"></span>نوبت دهی ریالی</a>
 					</li>
 				</ul>
@@ -202,13 +202,13 @@
 			<li class="daak-vertical-sub-menu">
 				<a  href="#" da-bundle="group"><span class="glyphicon glyphicon-time" ></span>ارشدیت</a>
 				<ul>
-					<li data-url="../group/searchgroup/searchgroup_view.php" >
+					<li daak-url="../group/searchgroup/searchgroup_view.php" >
 						<a href="#" da-bundle="group"><span  class="glyphicon glyphicon-print"></span>نوبت دهی عمومی</a>
 					</li>
-					<li data-url="../group/searchgroup/searchgroup_view.php" >
+					<li daak-url="../group/searchgroup/searchgroup_view.php" >
 						<a href="#" da-bundle="group"><span  class="glyphicon glyphicon-road"></span>نوبت دهی ارزی</a>
 					</li>
-					<li data-url="../group/searchgroup/searchgroup_view.php" >
+					<li daak-url="../group/searchgroup/searchgroup_view.php" >
 						<a href="#" da-bundle="group"><span  class="glyphicon glyphicon-volume-up"></span>نوبت دهی ریالی</a>
 					</li>
 				</ul>
@@ -217,13 +217,13 @@
 			<li class="daak-vertical-sub-menu">
 				<a  href="#" da-bundle="group"><span class="glyphicon glyphicon-time" ></span>لوازم خانگی</a>
 				<ul>
-					<li data-url="../group/searchgroup/searchgroup_view.php" >
+					<li daak-url="../group/searchgroup/searchgroup_view.php" >
 						<a href="#" da-bundle="group"><span  class="glyphicon glyphicon-print"></span>نوبت دهی عمومی</a>
 					</li>
-					<li data-url="../group/searchgroup/searchgroup_view.php" >
+					<li daak-url="../group/searchgroup/searchgroup_view.php" >
 						<a href="#" da-bundle="group"><span  class="glyphicon glyphicon-road"></span>نوبت دهی ارزی</a>
 					</li>
-					<li data-url="../group/searchgroup/searchgroup_view.php" >
+					<li daak-url="../group/searchgroup/searchgroup_view.php" >
 						<a href="#" da-bundle="group"><span  class="glyphicon glyphicon-volume-up"></span>نوبت دهی ریالی</a>
 					</li>
 				</ul>
@@ -232,13 +232,13 @@
 			<li class="daak-vertical-sub-menu">
 				<a  href="#" da-bundle="group"><span class="glyphicon glyphicon-time" ></span>اسب سواری</a>
 				<ul>
-					<li data-url="../group/searchgroup/searchgroup_view.php" >
+					<li daak-url="../group/searchgroup/searchgroup_view.php" >
 						<a href="#" da-bundle="group"><span  class="glyphicon glyphicon-print"></span>نوبت دهی عمومی</a>
 					</li>
-					<li data-url="../group/searchgroup/searchgroup_view.php" >
+					<li daak-url="../group/searchgroup/searchgroup_view.php" >
 						<a href="#" da-bundle="group"><span  class="glyphicon glyphicon-road"></span>نوبت دهی ارزی</a>
 					</li>
-					<li data-url="../group/searchgroup/searchgroup_view.php" >
+					<li daak-url="../group/searchgroup/searchgroup_view.php" >
 						<a href="#" da-bundle="group"><span  class="glyphicon glyphicon-volume-up"></span>نوبت دهی ریالی</a>
 					</li>
 				</ul>
@@ -247,13 +247,13 @@
 			<li class="daak-vertical-sub-menu">
 				<a  href="#" da-bundle="group"><span class="glyphicon glyphicon-time" ></span>سوار کگاری</a>
 				<ul>
-					<li data-url="../group/searchgroup/searchgroup_view.php" >
+					<li daak-url="../group/searchgroup/searchgroup_view.php" >
 						<a href="#" da-bundle="group"><span  class="glyphicon glyphicon-print"></span>نوبت دهی عمومی</a>
 					</li>
-					<li data-url="../group/searchgroup/searchgroup_view.php" >
+					<li daak-url="../group/searchgroup/searchgroup_view.php" >
 						<a href="#" da-bundle="group"><span  class="glyphicon glyphicon-road"></span>نوبت دهی ارزی</a>
 					</li>
-					<li data-url="../group/searchgroup/searchgroup_view.php" >
+					<li daak-url="../group/searchgroup/searchgroup_view.php" >
 						<a href="#" da-bundle="group"><span  class="glyphicon glyphicon-volume-up"></span>نوبت دهی ریالی</a>
 					</li>
 				</ul>
@@ -262,13 +262,13 @@
 			<li class="daak-vertical-sub-menu">
 				<a  href="#" da-bundle="group"><span class="glyphicon glyphicon-time" ></span>حسین کرد شبستر</a>
 				<ul>
-					<li data-url="../group/searchgroup/searchgroup_view.php" >
+					<li daak-url="../group/searchgroup/searchgroup_view.php" >
 						<a href="#" da-bundle="group"><span  class="glyphicon glyphicon-print"></span>نوبت دهی عمومی</a>
 					</li>
-					<li data-url="../group/searchgroup/searchgroup_view.php" >
+					<li daak-url="../group/searchgroup/searchgroup_view.php" >
 						<a href="#" da-bundle="group"><span  class="glyphicon glyphicon-road"></span>نوبت دهی ارزی</a>
 					</li>
-					<li data-url="../group/searchgroup/searchgroup_view.php" >
+					<li daak-url="../group/searchgroup/searchgroup_view.php" >
 						<a href="#" da-bundle="group"><span  class="glyphicon glyphicon-volume-up"></span>نوبت دهی ریالی</a>
 					</li>
 				</ul>
@@ -277,13 +277,13 @@
 			<li class="daak-vertical-sub-menu">
 				<a  href="#" da-bundle="group"><span class="glyphicon glyphicon-time" ></span>ناصر عبادی</a>
 				<ul>
-					<li data-url="../group/searchgroup/searchgroup_view.php" >
+					<li daak-url="../group/searchgroup/searchgroup_view.php" >
 						<a href="#" da-bundle="group"><span  class="glyphicon glyphicon-print"></span>نوبت دهی عمومی</a>
 					</li>
-					<li data-url="../group/searchgroup/searchgroup_view.php" >
+					<li daak-url="../group/searchgroup/searchgroup_view.php" >
 						<a href="#" da-bundle="group"><span  class="glyphicon glyphicon-road"></span>نوبت دهی ارزی</a>
 					</li>
-					<li data-url="../group/searchgroup/searchgroup_view.php" >
+					<li daak-url="../group/searchgroup/searchgroup_view.php" >
 						<a href="#" da-bundle="group"><span  class="glyphicon glyphicon-volume-up"></span>نوبت دهی ریالی</a>
 					</li>
 				</ul>
@@ -292,13 +292,13 @@
 			<li class="daak-vertical-sub-menu">
 				<a  href="#" da-bundle="group"><span class="glyphicon glyphicon-time" ></span>احمد والدی</a>
 				<ul>
-					<li data-url="../group/searchgroup/searchgroup_view.php" >
+					<li daak-url="../group/searchgroup/searchgroup_view.php" >
 						<a href="#" da-bundle="group"><span  class="glyphicon glyphicon-print"></span>نوبت دهی عمومی</a>
 					</li>
-					<li data-url="../group/searchgroup/searchgroup_view.php" >
+					<li daak-url="../group/searchgroup/searchgroup_view.php" >
 						<a href="#" da-bundle="group"><span  class="glyphicon glyphicon-road"></span>نوبت دهی ارزی</a>
 					</li>
-					<li data-url="../group/searchgroup/searchgroup_view.php" >
+					<li daak-url="../group/searchgroup/searchgroup_view.php" >
 						<a href="#" da-bundle="group"><span  class="glyphicon glyphicon-volume-up"></span>نوبت دهی ریالی</a>
 					</li>
 				</ul>

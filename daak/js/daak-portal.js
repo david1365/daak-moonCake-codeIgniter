@@ -755,10 +755,10 @@
 	};
 //------------------------------------------------------
 	$.fn.urlAjaxModal = function(){
-		if (($(this).attr("data-url")) && ($(this).data("url") != "")) {
+		if (($(this).attr("daak-url")) && ($(this).daak("url") != "")) {
 			var ajaxParams = {};
 			ajaxParams.title = $(this).text();
-			ajaxParams.url = $(this).data('url');
+			ajaxParams.url = $(this).daak('url');
 			ajaxParams.modalSize = "modal-lg";
 			ajaxParams.showModal = true;
 
@@ -789,7 +789,7 @@
 
 					li.unbind("click.li");
 					if ($(this).urlAjaxModal()){
-						li.attr("data-url", $(this).attr("data-url"));
+						li.attr("daak-url", $(this).attr("daak-url"));
 
 						li.bind("click.li", function(){
 							selfLi.click();
