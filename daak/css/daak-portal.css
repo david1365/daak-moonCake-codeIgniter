@@ -208,7 +208,7 @@ body {
 	/*height: -ms-calc(100% - 50px);*/
 	/*height: -o-calc(100% - 50px);*/
 	/*height: calc(100% - 50px);*/
-
+	padding: 90px 20px 20px 20px;
 }
 
 h2 {

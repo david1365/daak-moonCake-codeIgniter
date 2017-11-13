@@ -60,7 +60,7 @@ class group_ctl extends CI_Controller {
 //This is Default function of controller
 	public function index() {
 //Loading view file ci_sample_view.php
-		$this->load->view('_group/_searchgroup');
+		$this->load->view('_group/searchgroup_view');
 	}
 
 }

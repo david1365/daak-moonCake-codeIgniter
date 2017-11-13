@@ -110,7 +110,18 @@
     </header>
 
 	<section class="daak-container">
-		<!--    <div da-type="da-message_container" da-url="assets/css/actMessage.do"></div>-->
+<!--		    <div da-type="da-message_container" da-url="assets/css/actMessage.do"></div>-->
+
+<!--		<div da-type="da-message_container">-->
+		<div class="message-box">
+			<div class="message-title-content">
+				<h3 class="message-title">تعداد مراجعه کنندگان</h3>
+				<h3 class="message-date">تاریخ ثبت : 12/5/1365</h3>
+				</div>
+				<div class="message-content"></div>
+				</div>
+<!--		</div>-->
+
 	</section>
 
 	<!--TODO: data-url to da-url and use bundle-->
